@@ -1,0 +1,20 @@
+
+
+.dir_rtl{
+	direction:rtl;
+}
+
+.breadcrumbs .breadcrumb li a:after{
+	right:33px;
+}
+
+.inp1{
+	margin: 4px 0 0 7px !important;
+}
+
+.a1{
+	width: 33px;
+    display: inline-block;
+	text-decoration:none;
+}
+
