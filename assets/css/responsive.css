@@ -1,6 +1,6 @@
 /* lg */ 
 @media (min-width: 1200px) {
-
+	
 }
 
 /* md */
@@ -8,7 +8,7 @@
  
  
 .usa{
-	margin-left: 0;
+	margin-right: 0;
 } 
 
 .shipping img{
@@ -39,11 +39,11 @@
 @media (min-width: 768px) and (max-width: 991px) {
    
 .shop-menu ul li a{
-	padding-right: 0;
+	padding-left: 0;
 }
 
 #slider-carousel .item{
-	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .item h2{
@@ -51,7 +51,7 @@
 }
 
 .girl{
-	margin-right: 0;
+	margin-left: 0;
 }
 
 .pricing{
@@ -84,7 +84,7 @@
 
 #similar-product .carousel-inner .item img{
 	width: 60px;
-	margin-right: 0;
+	margin-left: 0;
 }
 
 .product-information span span{
@@ -93,7 +93,7 @@
 }
 
 .product-information .cart{
-	margin-right: 0;
+	margin-left: 0;
 	margin-top: 15px;
 }
 
@@ -112,7 +112,7 @@
 
 .address {
 	margin-top: 48px;
-	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .address p {
@@ -127,12 +127,12 @@
 
 .header_top .col-sm-6:first-child{
 	display: inline-block;
-	float: right;
+	float: left;
 }
 
 .header_top .col-sm-6:last-child{
 	display: inline-block;
-	float: left;
+	float: right;
 }
 
 .header-middle .col-sm-4 {
@@ -150,7 +150,7 @@
 }
 
 .shop-menu .nav.navbar-nav{
-	margin-right: -30px;
+	margin-left: -30px;
 }
 
 .header-bottom .col-sm-9{
@@ -181,7 +181,7 @@
 }
 
 .mainmenu ul li a.active{
-	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .dropdown .fa-angle-down{
@@ -222,12 +222,12 @@ ul.sub-menu{
 .header-bottom .col-sm-3 {
 	display: inline-block;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 38px;
 }
 
 #slider-carousel .item{
-	padding-right: 0;
+	padding-left: 0;
 }
 
 .shipping{
@@ -240,7 +240,7 @@ ul.sub-menu{
 
 .footer-top .col-sm-7 .col-sm-3{
 	width: 50%;
-	float: right;
+	float: left;
 }
 
 .footer-widget .col-sm-2 {
@@ -248,8 +248,8 @@ ul.sub-menu{
 	display: flex;
 	margin-bottom: 50px;
 	margin-top: 0;
-	float: right;
-	margin-right: 30px;
+	float: left;
+	margin-left: 30px;
 }
 
 .companyinfo{
@@ -286,8 +286,8 @@ ul.sub-menu{
 }
 
 .contactinfo ul li a {
-	padding-left: 15px;
-	padding-right: 0;
+	padding-right: 15px;
+	padding-left: 0;
 }
 
 .social-icons.pull-right{
@@ -323,6 +323,7 @@ ul.sub-menu{
 	width: 100%;
 }
 
+
 .shop-menu ul li {
 	padding: 0;
 }
@@ -333,11 +334,11 @@ ul.sub-menu{
 }
 
 .shop-menu .nav.navbar-nav {
-	margin-right: 0;
+	margin-left: 0;
 }
 
 .btn-group>.btn-group:last-child>.btn:first-child{
-	margin-left: 0;
+	margin-right: 0;
 }
 
 .header-bottom .col-sm-9{
@@ -369,7 +370,7 @@ ul.sub-menu{
 }
 
 .mainmenu ul li a.active{
-	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .dropdown .fa-angle-down{
@@ -400,9 +401,13 @@ ul.sub-menu{
   box-shadow: none;
 }
 
-
+	
+.img-responsive{
+	max-width: 90% !important;
+}
+	
 .item{
-	padding-right: 0;
+	padding-left: 0;
 }
 
 .item h1{
@@ -440,14 +445,14 @@ ul.sub-menu{
 	display: flex;
 	margin-bottom: 50px;
 	margin-top: 0;
-	float: right;
-	padding-left: 0;
-	padding-right: 30px;
-	margin-right: 0;
+	float: left;
+	padding-right: 0;
+	padding-left: 30px;
+	margin-left: 0;
 }
 
 .single-widget {
-	padding-right: 0;
+	padding-left: 0;
 }
 
 .features_items{
@@ -459,7 +464,7 @@ ul.sub-menu{
 }
 
 #similar-product .carousel-inner .item img{
-	margin-right: 4px;
+	margin-left: 4px;
 }
 
 .product-information{
@@ -476,7 +481,7 @@ ul.sub-menu{
 }
 
 #reviews form span input:last-child{
-	margin-right: 0;
+	margin-left: 0;
 }
 
 .blog-post-area .single-blog-post h3{
@@ -484,9 +489,15 @@ ul.sub-menu{
 }
 
 .blog-post-area .post-meta ul li{
-	margin-left: 7px;
+	margin-right: 7px;
+	font-size: 5pt;
 }
 
+	.sinlge-post-meta li i:after, .blog-post-area .post-meta ul li i:after {
+		top: 4px;
+		right: 20px;
+	}
+	
 .shipping{
 	margin-bottom: 20px;
 }
@@ -516,12 +527,13 @@ ul.sub-menu{
 }
 
 .product-information{
-	padding-right: 0;
+	padding-left: 0;
 	text-align: center;
 }
 
 .product-information span span{
 	float: none;
 }
+
 
 }

@@ -7,6 +7,7 @@ from .views import home_page
 from EShop import settings
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page),

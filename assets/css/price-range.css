@@ -17,7 +17,7 @@
 }
 .slider.slider-horizontal .slider-track {
   height: 15px;
-  right: 0;
+  left: 0;
   margin-top: -5px;
   top: 50%;
   width: 100%;
@@ -28,12 +28,12 @@
   bottom: 0;
 }
 .slider.slider-horizontal .slider-handle {
-  margin-right: -12px;
+  margin-left: -12px;
   margin-top: 2px;
 }
 
 .left-round{
-  margin-right:2px !important;
+  margin-left:2px !important;
 }
 
 .slider.slider-horizontal .slider-handle.triangle {
@@ -50,26 +50,26 @@
 .slider.slider-vertical .slider-track {
   width: 10px;
   height: 100%;
-  margin-right: -5px;
-  right: 50%;
+  margin-left: -5px;
+  left: 50%;
   top: 0;
 }
 .slider.slider-vertical .slider-selection {
   width: 100%;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
 }
 .slider.slider-vertical .slider-handle {
-  margin-right: -5px;
+  margin-left: -5px;
   margin-top: -10px;
 }
 .slider.slider-vertical .slider-handle.triangle {
-  border-width: 10px 10px 10px 0;
+  border-width: 10px 0 10px 10px;
   width: 1px;
   height: 1px;
-  border-right-color: #0480be;
-  margin-right: 0;
+  border-left-color: #0480be;
+  margin-left: 0;
 }
 .slider input {
   display: none;
@@ -98,7 +98,7 @@
 
 .slider-selection {
   -moz-box-sizing: border-box;
-  background: none repeat scroll 100% 0 #FE980F;
+  background: none repeat scroll 0 0 #FE980F;
   border-radius: 15px;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
   position: absolute;
