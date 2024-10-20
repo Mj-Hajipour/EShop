@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load render_partial %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +9,19 @@
     <meta name="author" content="">
     <title>صفحه اصلی | فروشگاه کارزیبا</title>
     {% include 'Shared/_HeaderReferences.html' %}
+    {% block header_ref %}{% endblock %}
 </head><!--/head-->
 
 <body>
-    {% include 'Shared/Header.html' %}
+   {% render_partial 'header' %}
 
     {% block content %}
 
         
     {% endblock %}
 
-    {% include 'Shared/Footer.html' %}
+   {% render_partial 'footer' %}
    {% include 'Shared/_FooterReferences.html' %}
+    {% block footer_ref %}{% endblock %}
 </body>
 </html>

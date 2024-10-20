@@ -1,16 +1,21 @@
+
+
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
-from .views import home_page
-
+from django.urls import path, include
+from .views import home_page,header,footer
 from EShop import settings
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('header',header,name="header"),
+    path('footer',footer,name="footer"),
     path('', home_page),
+    path('',include('EShop_account.urls')),
+
 ]
 if settings.DEBUG:
     #add root static files
