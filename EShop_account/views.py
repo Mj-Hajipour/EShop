@@ -8,3 +8,7 @@ from django.shortcuts import render
 def Login(request):
     context={}
     return  render(request,'account/Login.html',context)
+
+def register(request):
+    context={}
+    return  render(request,'account/Register.html',context)
