@@ -16,6 +16,8 @@ def Login_user(request):
         if user is not None:
             login(request, user)
             return  redirect('/admin')
+        else:
+            login_form.add_error('username', 'کاربری با مشخصات وارد شده یافت نشد')
 
     context={
         'login_form':login_form
