@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E35">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_account/templates/account/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/templates/account/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="E36 =&gt; 6:22" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +141,7 @@
       <workItem from="1729484580189" duration="2840000" />
       <workItem from="1729487532065" duration="85000" />
       <workItem from="1729569765342" duration="4077000" />
-      <workItem from="1729574135546" duration="2492000" />
+      <workItem from="1729574135546" duration="2772000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -203,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729575987262</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="E36 =&gt; 6:22">
+      <option name="closed" value="true" />
+      <created>1729577081420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729577081420</updated>
+    </task>
+    <task id="LOCAL-00009" summary="E36 =&gt; 6:22">
+      <option name="closed" value="true" />
+      <created>1729577151380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729577151380</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +251,8 @@
     <MESSAGE value="EShop E34 =&gt;8:50" />
     <MESSAGE value="EShop E34 =&gt; End" />
     <MESSAGE value="End of E35" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E35" />
+    <MESSAGE value="EShop E36 =&gt; 6:22" />
+    <MESSAGE value="E36 =&gt; 6:22" />
+    <option name="LAST_COMMIT_MESSAGE" value="E36 =&gt; 6:22" />
   </component>
 </project>
