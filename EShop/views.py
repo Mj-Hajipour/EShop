@@ -5,7 +5,7 @@ from django.shortcuts import render,redirect
 #header Code behind
 def header(request, *args, **kwargs):
     context={
-        'title':"فروشگاه"
+
         }
     return render(request, 'Shared/Header.html', context)
 
