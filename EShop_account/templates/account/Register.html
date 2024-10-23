@@ -5,10 +5,9 @@
 				<div class="col-sm-4">
 					<div class="signup-form"><!--sign up form-->
 						<h2 class="text-center">ثبت نام کاربـر جدیـد</h2>
-						<form action="#">
-							<input type="text" placeholder="نام کاربـری"/>
-							<input type="email" placeholder="آدرس ایمیـل"/>
-							<input type="password" placeholder="رمـز عبـور"/>
+						<form method="post">
+                            {% csrf_token %}
+							 {{ register_form }}
                              <a href="/login">قبلا ثبت نام کرده ام!</a>
 							<button type="submit" class="btn btn-default">ثبت نام</button>
 						</form>
