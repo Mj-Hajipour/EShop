@@ -9,7 +9,7 @@
 						<form action="#" method="post">
                             {% csrf_token %}
 {#							{{ login_form }}#}
-                            <label>{{ login_form.username.label }}</label>
+                            <label for="{{ login_form.username.id_for_label }}">{{ login_form.username.label }}</label>
                             {{ login_form.username }}
                             {% for error in login_form.username.errors %}
                                 <p class="text-danger">{{ error }}</p>
