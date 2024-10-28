@@ -1,10 +1,8 @@
-from cProfile import label
 from wsgiref.validate import validator
-
 from django import forms
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
-import re
+from django.core import validators
 
 class LoginForm(forms.Form):
     username = forms.CharField(
@@ -24,11 +22,18 @@ class LoginForm(forms.Form):
 class RegisterForm(forms.Form):
     username = forms.CharField(
         widget=forms.TextInput(attrs={'placeholder':'لطفا نام کاربری خود را وارد کنید'}),
-        label='نام کاربری'
+        label='نام کاربری',
+        validators=[
+            validators.MinLengthValidator(limit_value=20,message="تعداد کارکتر نمی تواند کمتراز 20 کارکتر باشد"),
+            validators.MaxLengthValidator(limit_value=100,message="تعداد کارکتر نمی تواند بیشتر از100 کارکتر باشد")
+        ]
     )
-    email = forms.EmailField(
-        widget=forms.EmailInput(attrs={'placeholder':'لطفا ایمیل خود را وارد کنید'}),
+    email = forms.CharField(
+        widget=forms.TextInput(attrs={'placeholder':'لطفا ایمیل خود را وارد کنید'}),
         label='ایمیل',
+        validators=[
+            validators.EmailValidator('ایمیل وارد شده معتبر نمی باشد')
+        ]
 
     )
     password = forms.CharField(
@@ -47,11 +52,16 @@ class RegisterForm(forms.Form):
             raise forms.ValidationError('این کاربر قبلا ثبت نام را انجام داده است')
         return username
 
-    def clean(self):
-        cleaned_data = super(RegisterForm, self).clean()
-        password = cleaned_data.get('password')
-        re_password = cleaned_data.get('re_password')
+    def clean_re_password(self):
+        password = self.cleaned_data.get('password')
+        re_password = self.cleaned_data.get('re_password')
         print(password, re_password)
         if  password != re_password:
-            self.add_error('re_password', 'کلمه‌های عبور باهم مطابقت ندارند')
-        return cleaned_data
+           raise forms.ValidationError("کلمات عبور با هم مغابرتی ندارند")
+        return password
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        is_exist_email = User.objects.filter(email=email).exists()
+        if  is_exist_email:
+            raise forms.ValidationError("با این ایمیل قبلا ثبت نام انجام شده است")
+        return email

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="Remove __pycache__ files and add to .gitignore">
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="Password forms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_account/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_account/templates/account/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/templates/account/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_account/templates/account/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/templates/account/Register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,6 +157,8 @@
       <workItem from="1729748026341" duration="6745000" />
       <workItem from="1729945455192" duration="2436000" />
       <workItem from="1730050952943" duration="2979000" />
+      <workItem from="1730053960755" duration="128000" />
+      <workItem from="1730091048230" duration="3766000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -247,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729665062201</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Password forms">
+      <option name="closed" value="true" />
+      <created>1730054080647</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730054080647</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +295,7 @@
     <MESSAGE value="EShop E36 =&gt; 6:22" />
     <MESSAGE value="E36 =&gt; 6:22" />
     <MESSAGE value="Remove __pycache__ files and add to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove __pycache__ files and add to .gitignore" />
+    <MESSAGE value="Password forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password forms" />
   </component>
 </project>
