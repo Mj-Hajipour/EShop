@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="Password forms">
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E36">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_account/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +49,9 @@
     &quot;accountId&quot;: &quot;2ed3dfc9-65c5-4c81-aecc-9b853190261d&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -158,7 +160,8 @@
       <workItem from="1729945455192" duration="2436000" />
       <workItem from="1730050952943" duration="2979000" />
       <workItem from="1730053960755" duration="128000" />
-      <workItem from="1730091048230" duration="3766000" />
+      <workItem from="1730091048230" duration="4375000" />
+      <workItem from="1730177193439" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -256,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730054080647</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="End of E36">
+      <option name="closed" value="true" />
+      <created>1730095223136</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730095223136</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +307,7 @@
     <MESSAGE value="E36 =&gt; 6:22" />
     <MESSAGE value="Remove __pycache__ files and add to .gitignore" />
     <MESSAGE value="Password forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password forms" />
+    <MESSAGE value="End of E36" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E36" />
   </component>
 </project>
