@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E36">
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E37">
+      <change afterPath="$PROJECT_DIR$/EShop_Product/templates/products_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EShop_Product/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/products/1_مرغ.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/products/None_آموزش_زبان_برنامه_نویسی_پایتون_مقدماتی.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/products/None_دوره_آموزشی_کتابخانه_Discord.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +169,10 @@
       <workItem from="1730050952943" duration="2979000" />
       <workItem from="1730053960755" duration="128000" />
       <workItem from="1730091048230" duration="4375000" />
-      <workItem from="1730177193439" duration="2089000" />
+      <workItem from="1730177193439" duration="4632000" />
+      <workItem from="1730262545004" duration="26000" />
+      <workItem from="1730262653635" duration="3620000" />
+      <workItem from="1730360151628" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -267,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730095223136</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="End of E37">
+      <option name="closed" value="true" />
+      <created>1730179386686</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730179386686</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +327,7 @@
     <MESSAGE value="Remove __pycache__ files and add to .gitignore" />
     <MESSAGE value="Password forms" />
     <MESSAGE value="End of E36" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E36" />
+    <MESSAGE value="End of E37" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E37" />
   </component>
 </project>
