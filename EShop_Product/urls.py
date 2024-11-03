@@ -1,10 +1,10 @@
 from django.urls import path
 
 from .models import Product
-from .views import products, ProductsList
+from .views import ProductsList, product_detail
 
 urlpatterns=[
-    path('products-function',products,name='products'),
-    path('products',ProductsList.as_view(),name='products'),
+    path('products',ProductsList.as_view()),
+    path('products/<productId>',product_detail)
 
 ]
