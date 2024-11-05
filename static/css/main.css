@@ -924,6 +924,7 @@ h2.title {
 
 .single-products {
   position: relative;
+    min-height: 450px;
 }
 
 .new, .sale {

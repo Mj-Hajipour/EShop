@@ -1,5 +1,9 @@
+from idlelib.pyparse import trans
+from itertools import product
+
 from django.http import Http404
 from django.shortcuts import render
+from django.template.context_processors import request
 from django.views.generic import ListView
 from .models import Product
 
@@ -11,7 +15,7 @@ def products(request):
 
 class ProductsList(ListView):
     template_name='products_list.html'
-    paginate_by = 1
+    paginate_by = 2
 
     def get_queryset(self):
          return  Product.objects.get_active_products()
@@ -20,8 +24,8 @@ class ProductsList(ListView):
 
 
 def product_detail(request,*args,**kwargs):
-    prodcut_id=kwargs['productId']
-    product=Product.objects.get_by_id(prodcut_id)
+    product_id=kwargs['productId']
+    product=Product.objects.get_by_id(product_id)
 
     if  product is None or not product.active:
         raise Http404('محصول مورد نظر یافت نشد')
@@ -30,3 +34,17 @@ def product_detail(request,*args,**kwargs):
     }
     return render(request,'product_detail.html',context)
 
+class SearchProductsView(ListView):
+    template_name='products_list.html'
+    paginate_by = 6
+    def get_queryset(self):
+        request=self.request
+        query=request.GET.get('q')
+        if query is not None:
+            return Product.objects.filter(active=True,title__icontains=query)
+        return Product.objects.get_active_products()
+
+'''
+   __icontains =>this contains this 
+   __iexact => field is exactly this
+'''
