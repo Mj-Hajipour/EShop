@@ -1,6 +1,3 @@
-from idlelib.pyparse import trans
-from itertools import product
-
 from django.http import Http404
 from django.shortcuts import render
 from django.template.context_processors import request
@@ -41,7 +38,7 @@ class SearchProductsView(ListView):
         request=self.request
         query=request.GET.get('q')
         if query is not None:
-            return Product.objects.filter(active=True,title__icontains=query)
+            return Product.objects.search(query)
         return Product.objects.get_active_products()
 
 '''

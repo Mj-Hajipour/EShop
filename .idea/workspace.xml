@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E41">
-      <change afterPath="$PROJECT_DIR$/templates/Shared/search_products_input_component.html" afterDir="false" />
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E42">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd22ffa4-53d9-4798-a305-8c905cfb5c4c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd22ffa4-53d9-4798-a305-8c905cfb5c4c/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +169,8 @@
       <workItem from="1730360151628" duration="2718000" />
       <workItem from="1730463586507" duration="7223000" />
       <workItem from="1730634248634" duration="5286000" />
-      <workItem from="1730778535154" duration="4502000" />
+      <workItem from="1730778535154" duration="5043000" />
+      <workItem from="1730909900101" duration="934000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -313,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730782685549</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="End of E42">
+      <option name="closed" value="true" />
+      <created>1730784734966</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730784734966</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +370,7 @@
     <MESSAGE value="End of E39" />
     <MESSAGE value="End of E40" />
     <MESSAGE value="End of E41" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E41" />
+    <MESSAGE value="End of E42" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E42" />
   </component>
 </project>

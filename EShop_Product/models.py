@@ -1,7 +1,5 @@
 import os
-from itertools import product
-from tabnanny import verbose
-
+from django.db.models import Q
 from django.db import models
 
 # Create your models here.
@@ -14,6 +12,12 @@ class ProductsManager(models.Manager):
                return qs.first()
            else:
                return None
+     def search(self,query):
+         #برای پیاده سازی سرچ که داخل توضیحات نیز بگردیم
+         lookup=Q(title__icontains=query) | Q(description__icontains=query)
+         #برای پباده سازی منطق or باید از lookupاستفاده کنیم
+         return self.get_queryset().filter(lookup,active=True).distinct()
+
 
 
 def get_file_ext(filename):
