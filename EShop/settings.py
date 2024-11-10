@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django_render_partial',
     #Our applications
     'EShop_account',
-    'EShop_Product'
+    'EShop_Product',
+    'Eshop_tag'
 ]
 
 
