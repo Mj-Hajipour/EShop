@@ -14,7 +14,7 @@ class ProductsManager(models.Manager):
                return None
      def search(self,query):
          #برای پیاده سازی سرچ که داخل توضیحات نیز بگردیم
-         lookup=Q(title__icontains=query) | Q(description__icontains=query)
+         lookup=(Q(title__icontains=query) | Q(description__icontains=query)|Q(tag__title__contains=query))
          #برای پباده سازی منطق or باید از lookupاستفاده کنیم
          return self.get_queryset().filter(lookup,active=True).distinct()
 

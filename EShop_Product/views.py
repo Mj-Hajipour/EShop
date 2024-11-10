@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.template.context_processors import request
 from django.views.generic import ListView
 from .models import Product
+from Eshop_tag.models import Tag
 
 # Create your views here.
 
@@ -29,6 +30,13 @@ def product_detail(request,*args,**kwargs):
     context={
           'product':product,
     }
+
+    # tag=Tag.objects.first()
+    # print(tag.products.all())
+
+    #دسترسی به مجموع تگ ها
+    print(product.tag_set.all())
+    #tag_set => set به معنای جدول واسطه می باشد
     return render(request,'product_detail.html',context)
 
 class SearchProductsView(ListView):
