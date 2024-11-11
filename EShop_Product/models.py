@@ -2,6 +2,9 @@ import os
 from django.db.models import Q
 from django.db import models
 
+from EShop_products_category.models import ProductCategory
+
+
 # Create your models here.
 class ProductsManager(models.Manager):
      def  get_active_products(self):
@@ -36,6 +39,9 @@ class Product(models.Model):
     price=models.IntegerField(verbose_name="قیمت")
     image=models.ImageField(upload_to=upload_image_path,null=True,blank=True,verbose_name="تصویر")
     active=models.BooleanField(default=True,verbose_name="فعال/غیر فعال")
+    categories=models.ManyToManyField(ProductCategory,blank=True,verbose_name='دسته بندی ها')
+
+
 
     objects=ProductsManager()
 
