@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E45">
-      <change afterPath="$PROJECT_DIR$/EShop_Product/migrations/0003_product_categories.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/migrations/0002_alter_productcategory_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_products_category/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eshop_tag/migrations/0002_alter_tag_options_alter_tag_active_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8f3ad4f3-2298-4726-9ce6-c4942b178c8f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8f3ad4f3-2298-4726-9ce6-c4942b178c8f.xml" afterDir="false" />
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E46">
+      <change afterPath="$PROJECT_DIR$/EShop_Product/templates/products_categories_partial.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/templates/products_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/templates/products_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_products_category/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_products_category/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -185,7 +180,15 @@
       <workItem from="1730913558969" duration="1441000" />
       <workItem from="1731131737285" duration="5568000" />
       <workItem from="1731214298005" duration="4943000" />
-      <workItem from="1731300143238" duration="3448000" />
+      <workItem from="1731300143238" duration="4029000" />
+      <workItem from="1731304221208" duration="25000" />
+      <workItem from="1731499185641" duration="2826000" />
+      <workItem from="1731520365728" duration="2534000" />
+      <workItem from="1731644763926" duration="2604000" />
+      <workItem from="1731647515241" duration="693000" />
+      <workItem from="1731648527938" duration="588000" />
+      <workItem from="1731649297624" duration="197000" />
+      <workItem from="1731649537127" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -363,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731219303072</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="End of E46">
+      <option name="closed" value="true" />
+      <created>1731303631373</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731303631374</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,6 +424,7 @@
     <MESSAGE value="End of E43" />
     <MESSAGE value="End of E44" />
     <MESSAGE value="End of E45" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E45" />
+    <MESSAGE value="End of E46" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E46" />
   </component>
 </project>

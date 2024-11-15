@@ -9,6 +9,10 @@ from EShop_products_category.models import ProductCategory
 class ProductsManager(models.Manager):
      def  get_active_products(self):
           return  self.get_queryset().filter(active=True)
+
+     def get_products_by_category(self, category_name):
+         return self.get_queryset().filter(categories__name__iexact=category_name, active=True)
+
      def get_by_id(self,product_id):
            qs=self.get_queryset().filter(id=product_id)
            if qs.count()==1:
@@ -17,7 +21,10 @@ class ProductsManager(models.Manager):
                return None
      def search(self,query):
          #برای پیاده سازی سرچ که داخل توضیحات نیز بگردیم
-         lookup=(Q(title__icontains=query) | Q(description__icontains=query)|Q(tag__title__contains=query))
+         lookup=(
+                 Q(title__icontains=query) |
+                 Q(description__icontains=query)|
+                 Q(tag__title__contains=query))
          #برای پباده سازی منطق or باید از lookupاستفاده کنیم
          return self.get_queryset().filter(lookup,active=True).distinct()
 
@@ -40,8 +47,6 @@ class Product(models.Model):
     image=models.ImageField(upload_to=upload_image_path,null=True,blank=True,verbose_name="تصویر")
     active=models.BooleanField(default=True,verbose_name="فعال/غیر فعال")
     categories=models.ManyToManyField(ProductCategory,blank=True,verbose_name='دسته بندی ها')
-
-
 
     objects=ProductsManager()
 

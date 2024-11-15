@@ -2,6 +2,8 @@ from django.http import Http404
 from django.shortcuts import render
 from django.template.context_processors import request
 from django.views.generic import ListView
+from unicodedata import category
+from EShop_products_category.models import ProductCategory
 from .models import Product
 from Eshop_tag.models import Tag
 
@@ -13,12 +15,20 @@ def products(request):
 
 class ProductsList(ListView):
     template_name='products_list.html'
-    paginate_by = 2
+    paginate_by = 6
 
     def get_queryset(self):
          return  Product.objects.get_active_products()
 
-
+class ProductsListByCategory(ListView):
+    template_name='products_list.html'
+    paginate_by = 6
+    def get_queryset(self):
+         category_name=self.kwargs['category_name']
+         category=ProductCategory.objects.filter(name__iexact=category_name).first()
+         if category is None:
+             raise Http404('صفحه مورد نظر یافت نشد')
+         return  Product.objects.get_products_by_category(category_name)
 
 
 def product_detail(request,*args,**kwargs):
@@ -53,3 +63,10 @@ class SearchProductsView(ListView):
    __icontains =>this contains this 
    __iexact => field is exactly this
 '''
+
+def  products_categories_partial(request):
+    categories=ProductCategory.objects.all()
+    contex={
+        'categories':categories,
+    }
+    return render(request,'products_categories_partial.html',contex)

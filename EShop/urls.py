@@ -13,9 +13,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('header',header,name="header"),
     path('footer',footer,name="footer"),
-    path('', home_page),
-    path('',include('EShop_account.urls')),
-    path('',include('EShop_Product.urls')),
+    path('', home_page,name="home"),
+    path('account/',include('EShop_account.urls')),
+    path('product/',include('EShop_Product.urls')),
 
 ]
 if settings.DEBUG:

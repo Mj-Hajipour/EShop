@@ -8,6 +8,5 @@ class ProductCategory(models.Model):
     class Meta:
          verbose_name='دسته بندی محصولات'
          verbose_name_plural='دسته بندی محصولات'
-
     def __str__(self):
         return self.title
