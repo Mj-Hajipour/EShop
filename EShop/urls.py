@@ -15,7 +15,7 @@ urlpatterns = [
     path('footer',footer,name="footer"),
     path('', home_page,name="home"),
     path('account/',include('EShop_account.urls')),
-    path('product/',include('EShop_Product.urls')),
+    path('',include('EShop_Product.urls')),
 
 ]
 if settings.DEBUG:
