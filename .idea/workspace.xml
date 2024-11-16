@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E46">
-      <change afterPath="$PROJECT_DIR$/EShop_Product/templates/products_categories_partial.html" afterDir="false" />
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E47">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Product/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Product/templates/products_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/templates/products_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_products_category/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_products_category/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +81,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -188,7 +181,9 @@
       <workItem from="1731647515241" duration="693000" />
       <workItem from="1731648527938" duration="588000" />
       <workItem from="1731649297624" duration="197000" />
-      <workItem from="1731649537127" duration="307000" />
+      <workItem from="1731649537127" duration="876000" />
+      <workItem from="1731774723674" duration="883000" />
+      <workItem from="1731775679703" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -374,7 +369,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731303631374</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="End of E47">
+      <option name="closed" value="true" />
+      <created>1731650141411</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1731650141411</updated>
+    </task>
+    <task id="LOCAL-00025" summary="End of E47">
+      <option name="closed" value="true" />
+      <created>1731650372757</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731650372757</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +436,7 @@
     <MESSAGE value="End of E44" />
     <MESSAGE value="End of E45" />
     <MESSAGE value="End of E46" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E46" />
+    <MESSAGE value="End of E47" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E47" />
   </component>
 </project>
