@@ -1,6 +1,7 @@
-from lib2to3.fixes.fix_input import context
-
 from django.shortcuts import render,redirect
+from EShop_Sliders.models import Slider
+    
+
 
 #header Code behind
 def header(request, *args, **kwargs):
@@ -19,7 +20,9 @@ def footer(request, *args, **kwargs):
     }
     return  render(request, 'Shared/Footer.html',context)
 def home_page(request):
+    sliders=Slider.objects.all()
     context={
-        'data':'این فروشگاه با فریم ورک django نوشته شده است'
+        'data':'این فروشگاه با فریم ورک django نوشته شده است',
+        'sliders':sliders
     }
     return render(request,"home_page.html",context)

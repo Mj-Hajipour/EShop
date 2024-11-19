@@ -1,6 +1,6 @@
 {% load static %}
 {% url 'home' as home_url %}
-
+{% url 'products' as products_url %}
 <header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -80,8 +80,8 @@
 						</div>
 						<div class="mainmenu pull-right">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li ><a href="/" class="active">خـانه</a></li>
-								<li><a href="/product/products"   >محصولات</a></li>
+								<li  ><a href="{{ home_url }}" class="{% if  request.path == home_url %}active text-danger{% endif %}">خـانه</a></li>
+								<li><a href="{{ products_url }}" class="{% if request.path == products_url %}active{% endif %}"  >محصولات</a></li>
 								<li class="dropdown"><a href="#">اخبـار<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="blog.html">آخریـن اخبـار</a></li>

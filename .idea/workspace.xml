@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E47">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +187,9 @@
       <workItem from="1731649537127" duration="876000" />
       <workItem from="1731774723674" duration="883000" />
       <workItem from="1731775679703" duration="334000" />
+      <workItem from="1731779646489" duration="586000" />
+      <workItem from="1731780307730" duration="405000" />
+      <workItem from="1731997354412" duration="5840000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
