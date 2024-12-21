@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E47">
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E49">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +183,23 @@
       <workItem from="1731775679703" duration="334000" />
       <workItem from="1731779646489" duration="586000" />
       <workItem from="1731780307730" duration="405000" />
-      <workItem from="1731997354412" duration="5840000" />
+      <workItem from="1731997354412" duration="6119000" />
+      <workItem from="1733151866888" duration="572000" />
+      <workItem from="1733152558543" duration="5098000" />
+      <workItem from="1733160524237" duration="4173000" />
+      <workItem from="1733591073003" duration="2394000" />
+      <workItem from="1733748626364" duration="7653000" />
+      <workItem from="1733892335905" duration="5152000" />
+      <workItem from="1734281494634" duration="3625000" />
+      <workItem from="1734326722186" duration="6998000" />
+      <workItem from="1734365694231" duration="40000" />
+      <workItem from="1734415562059" duration="2909000" />
+      <workItem from="1734543831647" duration="1098000" />
+      <workItem from="1734545065053" duration="1162000" />
+      <workItem from="1734588313208" duration="3904000" />
+      <workItem from="1734783728527" duration="1112000" />
+      <workItem from="1734797275296" duration="4255000" />
+      <workItem from="1734850161897" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -391,7 +401,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731650372757</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="End of E48">
+      <option name="closed" value="true" />
+      <created>1732018578196</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732018578196</updated>
+    </task>
+    <task id="LOCAL-00027" summary="End of E48">
+      <option name="closed" value="true" />
+      <created>1732018601222</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1732018601222</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +469,7 @@
     <MESSAGE value="End of E45" />
     <MESSAGE value="End of E46" />
     <MESSAGE value="End of E47" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E47" />
+    <MESSAGE value="End of E48" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E48" />
   </component>
 </project>

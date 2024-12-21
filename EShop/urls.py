@@ -14,7 +14,7 @@ urlpatterns = [
     path('header',header,name="header"),
     path('footer',footer,name="footer"),
     path('', home_page,name="home"),
-    path('account/',include('EShop_account.urls')),
+    path('',include('EShop_account.urls')),
     path('',include('EShop_Product.urls')),
 
 ]

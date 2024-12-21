@@ -1,11 +1,11 @@
+import itertools
+
 from django.http import Http404
 from django.shortcuts import render
-from django.template.context_processors import request
 from django.views.generic import ListView
-from unicodedata import category
 from EShop_products_category.models import ProductCategory
-from .models import Product
-from Eshop_tag.models import Tag
+from .models import Product, ProductGallery
+
 
 # Create your views here.
 
@@ -30,22 +30,30 @@ class ProductsListByCategory(ListView):
              raise Http404('صفحه مورد نظر یافت نشد')
          return  Product.objects.get_products_by_category(category_name)
 
+def my_grouper(n,iterable):
+    args = [iter(iterable)] * n
+    return ([e for e in t if e is not None] for t in itertools.zip_longest(*args))
+
+
 
 def product_detail(request,*args,**kwargs):
-    product_id=kwargs['productId']
-    product=Product.objects.get_by_id(product_id)
+    selected_product_id=kwargs['productId']
+    product=Product.objects.get_by_id(selected_product_id)
 
     if  product is None or not product.active:
         raise Http404('محصول مورد نظر یافت نشد')
+    galleries=ProductGallery.objects.filter(product_id=selected_product_id)
+
+    grouped_galleries=list(my_grouper(3,galleries))
     context={
           'product':product,
+           'galleries':grouped_galleries
     }
-
     # tag=Tag.objects.first()
     # print(tag.products.all())
 
     #دسترسی به مجموع تگ ها
-    print(product.tag_set.all())
+    # print(product.tag_set.all())
     #tag_set => set به معنای جدول واسطه می باشد
     return render(request,'product_detail.html',context)
 

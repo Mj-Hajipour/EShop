@@ -1,7 +1,5 @@
-from wsgiref.validate import validator
 from django import forms
 from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
 from django.core import validators
 
 class LoginForm(forms.Form):
@@ -46,7 +44,6 @@ class RegisterForm(forms.Form):
     )
     def clean_username(self):
         username = self.cleaned_data['username']
-        print(username)
         is_exist_user_by_username = User.objects.filter(username=username).exists()
         if is_exist_user_by_username:
             raise forms.ValidationError('این کاربر قبلا ثبت نام را انجام داده است')
@@ -55,7 +52,6 @@ class RegisterForm(forms.Form):
     def clean_re_password(self):
         password = self.cleaned_data.get('password')
         re_password = self.cleaned_data.get('re_password')
-        print(password, re_password)
         if  password != re_password:
            raise forms.ValidationError("کلمات عبور با هم مغابرتی ندارند")
         return password

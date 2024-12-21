@@ -15,7 +15,7 @@
                                 <p class="text-danger">{{ error }}</p>
                             {% endfor %}
                             <br>
-                            <label>{{ login_form.password.label }}</label>
+                            <label for="{{ login_form.password.label.id }}" >{{ login_form.password.label }}</label>
                             {{ login_form.password }}
                             {% for error in login_form.password.errors %}
                                 <p class="text-danger">{{ error }}</p>

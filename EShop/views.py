@@ -4,6 +4,7 @@ from EShop_Sliders.models import Slider
 
 
 #header Code behind
+# partial_view
 def header(request, *args, **kwargs):
     context={
 

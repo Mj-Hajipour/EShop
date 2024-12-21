@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product
+from .models import Product,ProductGallery
 
 # Register your models here.
 
@@ -9,3 +9,4 @@ class AdminProducts(admin.ModelAdmin):
          model = Product
 
 admin.site.register(Product,AdminProducts)
+admin.site.register(ProductGallery)

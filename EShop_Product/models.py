@@ -1,4 +1,6 @@
 import os
+from symtable import Class
+
 from django.db.models import Q
 from django.db import models
 
@@ -24,7 +26,8 @@ class ProductsManager(models.Manager):
          lookup=(
                  Q(title__icontains=query) |
                  Q(description__icontains=query)|
-                 Q(tag__title__contains=query))
+                 Q(tag__title__contains=query)
+         )
          #برای پباده سازی منطق or باید از lookupاستفاده کنیم
          return self.get_queryset().filter(lookup,active=True).distinct()
 
@@ -39,6 +42,11 @@ def upload_image_path(instance, filename):
     name, ext = get_file_ext(filename)
     final_name=f"{instance.id}_{instance.title}{ext}"
     return f"products/{final_name}"
+
+def upload_gallery_image_path(instance, filename):
+    name, ext = get_file_ext(filename)
+    final_name=f"{instance.id}_{instance.title}{ext}"
+    return f"products/galleries/{final_name}"
 
 class Product(models.Model):
     title=models.CharField(max_length=150,verbose_name="عنوان")
@@ -58,3 +66,14 @@ class Product(models.Model):
         return self.title
     def get_absolute_url(self):
         return  f"/products/{self.id}"
+
+class ProductGallery(models.Model):
+     title=models.CharField(max_length=150,verbose_name='عنوان')
+     image=models.ImageField(upload_to=upload_gallery_image_path,blank=True,verbose_name='تصویر')
+     product=models.ForeignKey(Product,on_delete=models.CASCADE,verbose_name='برای محصول')
+
+     class Meta:
+         verbose_name='تصویر'
+         verbose_name_plural='تصاویر'
+     def __str__(self):
+         return self.title

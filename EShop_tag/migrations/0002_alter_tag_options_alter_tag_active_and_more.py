@@ -7,7 +7,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('EShop_Product', '0002_alter_product_options_alter_product_active_and_more'),
-        ('Eshop_tag', '0001_initial'),
+        ('EShop_tag', '0001_initial'),
     ]
 
     operations = [
