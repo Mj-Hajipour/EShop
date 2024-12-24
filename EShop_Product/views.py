@@ -42,12 +42,19 @@ def product_detail(request,*args,**kwargs):
 
     if  product is None or not product.active:
         raise Http404('محصول مورد نظر یافت نشد')
+
+    related_products=Product.objects.get_queryset().filter(categories__product=product).distinct()
+
+    grouped_related_products=my_grouper(3,related_products)
+
     galleries=ProductGallery.objects.filter(product_id=selected_product_id)
 
     grouped_galleries=list(my_grouper(3,galleries))
+
     context={
-          'product':product,
-           'galleries':grouped_galleries
+        'product':product,
+        'galleries':grouped_galleries,
+        'related_products':grouped_related_products,
     }
     # tag=Tag.objects.first()
     # print(tag.products.all())
