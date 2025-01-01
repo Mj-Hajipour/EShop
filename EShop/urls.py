@@ -1,6 +1,4 @@
 
-
-from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
@@ -16,6 +14,7 @@ urlpatterns = [
     path('', home_page,name="home"),
     path('',include('EShop_account.urls')),
     path('',include('EShop_Product.urls')),
+    path('',include('EShop_Contact.urls')),
 
 ]
 if settings.DEBUG:
