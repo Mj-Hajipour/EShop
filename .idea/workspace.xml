@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E50">
-      <change afterPath="$PROJECT_DIR$/EShop_Contact/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_Contact/templates/contact_us/contact_us_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EShop_Contact/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
-    </list>
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E52" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,12 +46,12 @@
     &quot;assignee&quot;: &quot;Mj-Hajipour&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mj-Hajipour/EShopp.git&quot;,
-    &quot;accountId&quot;: &quot;2ed3dfc9-65c5-4c81-aecc-9b853190261d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mj-Hajipour/EShop.git",
+    "accountId": "2ed3dfc9-65c5-4c81-aecc-9b853190261d"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -219,7 +210,16 @@
       <workItem from="1735019721312" duration="9620000" />
       <workItem from="1735574095959" duration="3376000" />
       <workItem from="1735714313672" duration="7259000" />
-      <workItem from="1735733269896" duration="1266000" />
+      <workItem from="1735733269896" duration="2493000" />
+      <workItem from="1735749145020" duration="17000" />
+      <workItem from="1735967171044" duration="8009000" />
+      <workItem from="1735978464459" duration="117000" />
+      <workItem from="1736055019209" duration="5245000" />
+      <workItem from="1736062824788" duration="64000" />
+      <workItem from="1736231727018" duration="7289000" />
+      <workItem from="1736355161626" duration="2888000" />
+      <workItem from="1736358077174" duration="328000" />
+      <workItem from="1736358602793" duration="767000" />
     </task>
     <task id="LOCAL-00001" summary="EShop init">
       <option name="closed" value="true" />
@@ -461,7 +461,143 @@
       <option name="project" value="LOCAL" />
       <updated>1735023406396</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="End of E51">
+      <option name="closed" value="true" />
+      <created>1735734740359</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1735734740359</updated>
+    </task>
+    <task id="LOCAL-00032" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1735978112274</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1735978112274</updated>
+    </task>
+    <task id="LOCAL-00033" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736357893891</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1736357893891</updated>
+    </task>
+    <task id="LOCAL-00034" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736357916394</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1736357916394</updated>
+    </task>
+    <task id="LOCAL-00035" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736357950023</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1736357950023</updated>
+    </task>
+    <task id="LOCAL-00036" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736357980225</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1736357980225</updated>
+    </task>
+    <task id="LOCAL-00037" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358026778</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358026778</updated>
+    </task>
+    <task id="LOCAL-00038" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358053223</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358053223</updated>
+    </task>
+    <task id="LOCAL-00039" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358113400</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358113400</updated>
+    </task>
+    <task id="LOCAL-00040" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358132640</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358132640</updated>
+    </task>
+    <task id="LOCAL-00041" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358179755</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358179755</updated>
+    </task>
+    <task id="LOCAL-00042" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358378084</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358378084</updated>
+    </task>
+    <task id="LOCAL-00043" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358383549</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358383549</updated>
+    </task>
+    <task id="LOCAL-00044" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736358628131</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1736358628131</updated>
+    </task>
+    <task id="LOCAL-00045" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736359014101</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1736359014101</updated>
+    </task>
+    <task id="LOCAL-00046" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736359085368</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1736359085368</updated>
+    </task>
+    <task id="LOCAL-00047" summary="End of E52">
+      <option name="closed" value="true" />
+      <created>1736359156870</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1736359156870</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,9 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="EShop init" />
-    <MESSAGE value="EShop init2" />
-    <MESSAGE value="EShop E33 =&gt;9:28" />
     <MESSAGE value="EShop E34 =&gt;8:50" />
     <MESSAGE value="EShop E34 =&gt; End" />
     <MESSAGE value="End of E35" />
@@ -516,6 +649,9 @@
     <MESSAGE value="End of E48" />
     <MESSAGE value="End of E49" />
     <MESSAGE value="End of E50" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E50" />
+    <MESSAGE value="End of E51" />
+    <MESSAGE value="End of E53" />
+    <MESSAGE value="End of E52" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E52" />
   </component>
 </project>

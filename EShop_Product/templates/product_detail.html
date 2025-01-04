@@ -49,12 +49,18 @@
 										<span>قیمت : {{ product.price }} تومان</span>
 									</span>
 									<span>
-										<label>تعداد :</label>
-										<input type="text" value="3" class="search_box">
-										<button type="button" class="btn btn-fefault cart">
-											<i class="fa fa-shopping-cart"></i>
-											افـزودن به سبـد خریـد
-										</button>
+                                        <form method="post" action="/add-user-order">
+                                             {% csrf_token %}
+                                              <label>تعداد :</label>
+                                              {{ new_order_form.product_id }}
+                                               {{ new_order_form.count }}
+										     <button type="submit" class="btn btn-fefault cart">
+											     <i class="fa fa-shopping-cart"></i>
+											     افـزودن به سبـد خریـد
+										     </button>
+                                        </form>
+
+
 									</span>
 								</div>
 								<div>

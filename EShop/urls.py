@@ -16,6 +16,8 @@ urlpatterns = [
     path('',include('EShop_Product.urls')),
     path('',include('EShop_Contact.urls')),
 
+    path('',include('EShop_Order.urls')),
+
 ]
 if settings.DEBUG:
     #add root static files

@@ -1,23 +1,26 @@
 from django.shortcuts import render,redirect
 from EShop_Sliders.models import Slider
+from EShop_Settings.models import SiteSettings
     
 
 
 #header Code behind
 # partial_view
 def header(request, *args, **kwargs):
+    Site_setting = SiteSettings.objects.first()
     context={
-
+        "setting": Site_setting
         }
     return render(request, 'Shared/Header.html', context)
 
 
 
 def footer(request, *args, **kwargs):
+    Site_setting=SiteSettings.objects.first()
     context={
-        "Copy_right":"کلیه حقوق این وب سایت می رسد به",
         "author":"محمد جواد حاجی پور",
-        "TID":"https://t.me/mjhajipour19"
+        "TID":"https://t.me/mjhajipour19",
+        "setting":Site_setting
     }
     return  render(request, 'Shared/Footer.html',context)
 def home_page(request):

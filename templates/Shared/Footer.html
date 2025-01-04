@@ -31,9 +31,11 @@
 					</div>
 					<div class="col-sm-6">
 						<div class="companyinfo">
-							<h2><span>SHOP</span>CENTER</h2>
+                            <img src="{{ setting.logo.url }}" alt="">
 							<h4>درباره ما :</h4>
-							<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+							<p>
+                                {{ setting.about_us }}
+                            </p>
 						</div>
 					</div>
 				</div>
@@ -98,7 +100,8 @@
 		<div class="footer-bottom" style="direction: rtl !important;">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">{{ Copy_right }}
+					<p class="pull-right" style="position:relative;right:20px;">{{ setting.copy_right }},
+                        نویسنده :
 						<a target="_blank" href="{{ TID }}"><b>{{author}}</b></a>
 					</p>
 				</div>

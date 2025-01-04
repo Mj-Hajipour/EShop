@@ -1,6 +1,7 @@
 from django.shortcuts import  render
 from EShop_Contact.forms import CreateContactForm
 from .models import  ContactUs
+from EShop_Settings.models import SiteSettings
 
 
 
@@ -17,7 +18,9 @@ def contact_page(request):
         #todo :show user a success message
         contact_form=CreateContactForm()
 
+    Site_Settings=SiteSettings.objects.first()
     context = {
         'contact_form':contact_form,
+        'settings': Site_Settings,
     }
     return render(request,'contact_us/contact_us_page.html',context)

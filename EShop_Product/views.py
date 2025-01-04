@@ -3,6 +3,8 @@ import itertools
 from django.http import Http404
 from django.shortcuts import render
 from django.views.generic import ListView
+
+from EShop_Order.form import UserNewOrderForm
 from EShop_products_category.models import ProductCategory
 from .models import Product, ProductGallery
 
@@ -38,6 +40,8 @@ def my_grouper(n,iterable):
 
 def product_detail(request,*args,**kwargs):
     selected_product_id=kwargs['productId']
+
+    new_order_form = UserNewOrderForm(request.POST or None,initial={'product_id':selected_product_id})
     product=Product.objects.get_by_id(selected_product_id)
 
     if  product is None or not product.active:
@@ -55,6 +59,7 @@ def product_detail(request,*args,**kwargs):
         'product':product,
         'galleries':grouped_galleries,
         'related_products':grouped_related_products,
+        'new_order_form':new_order_form,
     }
     # tag=Tag.objects.first()
     # print(tag.products.all())
