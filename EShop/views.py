@@ -30,3 +30,10 @@ def home_page(request):
         'sliders':sliders
     }
     return render(request,"home_page.html",context)
+
+def about_page(request):
+    Site_setting = SiteSettings.objects.first()
+    context={
+        'setting':Site_setting
+    }
+    return render(request,'about_page.html',context)

@@ -2,7 +2,7 @@
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from .views import home_page,header,footer
+from .views import home_page, header, footer, about_page
 from EShop import settings
 
 
@@ -12,6 +12,7 @@ urlpatterns = [
     path('header',header,name="header"),
     path('footer',footer,name="footer"),
     path('', home_page,name="home"),
+    path('about_page',about_page,name="about_page"),
     path('',include('EShop_account.urls')),
     path('',include('EShop_Product.urls')),
     path('',include('EShop_Contact.urls')),
