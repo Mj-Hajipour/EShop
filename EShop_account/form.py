@@ -22,7 +22,7 @@ class RegisterForm(forms.Form):
         widget=forms.TextInput(attrs={'placeholder':'لطفا نام کاربری خود را وارد کنید'}),
         label='نام کاربری',
         validators=[
-            validators.MinLengthValidator(limit_value=20,message="تعداد کارکتر نمی تواند کمتراز 20 کارکتر باشد"),
+            validators.MinLengthValidator(limit_value=10,message="تعداد کارکتر نمی تواند کمتراز 10 کارکتر باشد"),
             validators.MaxLengthValidator(limit_value=100,message="تعداد کارکتر نمی تواند بیشتر از100 کارکتر باشد")
         ]
     )

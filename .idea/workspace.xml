@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E53">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E54" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,12 +46,12 @@
     &quot;assignee&quot;: &quot;Mj-Hajipour&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mj-Hajipour/EShop.git&quot;,
-    &quot;accountId&quot;: &quot;2ed3dfc9-65c5-4c81-aecc-9b853190261d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mj-Hajipour/EShopp.git",
+    "accountId": "2ed3dfc9-65c5-4c81-aecc-9b853190261d"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -224,22 +222,7 @@
       <workItem from="1736358602793" duration="866000" />
       <workItem from="1736359633445" duration="711000" />
       <workItem from="1736399899120" duration="401000" />
-    </task>
-    <task id="LOCAL-00002" summary="EShop init2">
-      <option name="closed" value="true" />
-      <created>1729107381402</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1729107381402</updated>
-    </task>
-    <task id="LOCAL-00003" summary="EShop E33 =&gt;9:28">
-      <option name="closed" value="true" />
-      <created>1729401201454</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1729401201454</updated>
+      <workItem from="1736575211542" duration="2824000" />
     </task>
     <task id="LOCAL-00004" summary="EShop E34 =&gt;8:50">
       <option name="closed" value="true" />
@@ -617,7 +600,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736360317150</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="End of E54">
+      <option name="closed" value="true" />
+      <created>1736577539037</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1736577539037</updated>
+    </task>
+    <task id="LOCAL-00052" summary="End of E54">
+      <option name="closed" value="true" />
+      <created>1736577678685</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1736577678685</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="EShop E34 =&gt;8:50" />
     <MESSAGE value="EShop E34 =&gt; End" />
     <MESSAGE value="End of E35" />
     <MESSAGE value="EShop E36 =&gt; 6:22" />
@@ -672,6 +670,7 @@
     <MESSAGE value="End of E51" />
     <MESSAGE value="End of E52" />
     <MESSAGE value="End of E53" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E53" />
+    <MESSAGE value="End of E54" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E54" />
   </component>
 </project>

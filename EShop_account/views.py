@@ -15,7 +15,10 @@ def Login_user(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return  redirect('/admin')
+            if request.user.is_superuser:
+                return  redirect('/admin/')
+            else:
+                return redirect('/')
         else:
             login_form.add_error('username', 'رمز عبور یا نام کاربری اشتباه است')
 

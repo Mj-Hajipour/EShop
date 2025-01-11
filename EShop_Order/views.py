@@ -10,7 +10,7 @@ from EShop_Product.models import Product
 
 # Create your views here.
 
-@login_required
+@login_required(login_url='/login')
 def add_user_order(request):
     new_order_form=UserNewOrderForm(request.POST or None)
 

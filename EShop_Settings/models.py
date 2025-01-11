@@ -22,6 +22,7 @@ class SiteSettings(models.Model):
     about_us=models.TextField(verbose_name='درباره ما',null=True,blank=True)
     logo=models.ImageField(upload_to=upload_settings_image_path,null=True,blank=True,verbose_name='لوگو سایت')
     copy_right=models.CharField(verbose_name='متن کپی رایت',max_length=200,null=True,blank=True)
+    About_logo=models.ImageField(upload_to=upload_settings_image_path,null=True,blank=True,verbose_name='تصویر لوگو درباره ما')
 
 
     class Meta:
