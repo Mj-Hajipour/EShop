@@ -1,7 +1,7 @@
 from itertools import product
 
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import redirect
+from django.shortcuts import redirect, render
 
 from EShop_Order.form import UserNewOrderForm
 from EShop_Order.models import  Order
@@ -29,3 +29,17 @@ def add_user_order(request):
         return redirect(f'/products/{product.id}')
 
     return redirect('/')
+
+
+@login_required(login_url='/login')
+def user_open_order(request):
+    context={
+        'order':None,
+         'details':None,
+    }
+    open_order = Order.objects.filter(owner_id=request.user.id, is_paid=False).first()
+    if open_order is not None:
+        context['order']= open_order
+        context['details']=open_order.orderdetails_set.all()
+    return render(request,'order/user_open_order.html',context)
+

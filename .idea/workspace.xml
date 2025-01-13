@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E54" />
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E54">
+      <change afterPath="$PROJECT_DIR$/EShop_Order/templates/order/user_open_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +54,12 @@
     &quot;assignee&quot;: &quot;Mj-Hajipour&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mj-Hajipour/EShopp.git",
-    "accountId": "2ed3dfc9-65c5-4c81-aecc-9b853190261d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mj-Hajipour/EShopp.git&quot;,
+    &quot;accountId&quot;: &quot;2ed3dfc9-65c5-4c81-aecc-9b853190261d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -222,23 +230,9 @@
       <workItem from="1736358602793" duration="866000" />
       <workItem from="1736359633445" duration="711000" />
       <workItem from="1736399899120" duration="401000" />
-      <workItem from="1736575211542" duration="2824000" />
-    </task>
-    <task id="LOCAL-00004" summary="EShop E34 =&gt;8:50">
-      <option name="closed" value="true" />
-      <created>1729445915143</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1729445915143</updated>
-    </task>
-    <task id="LOCAL-00005" summary="EShop E34 =&gt; End">
-      <option name="closed" value="true" />
-      <created>1729487589498</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1729487589498</updated>
+      <workItem from="1736575211542" duration="6020000" />
+      <workItem from="1736703308764" duration="2308000" />
+      <workItem from="1736748706379" duration="654000" />
     </task>
     <task id="LOCAL-00006" summary="EShop E34 =&gt; End">
       <option name="closed" value="true" />
@@ -616,7 +610,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736577678685</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="End of E54">
+      <option name="closed" value="true" />
+      <created>1736578067034</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1736578067034</updated>
+    </task>
+    <task id="LOCAL-00054" summary="End of E54">
+      <option name="closed" value="true" />
+      <created>1736578188946</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1736578188946</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
