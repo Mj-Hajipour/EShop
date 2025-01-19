@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E54">
-      <change afterPath="$PROJECT_DIR$/EShop_Order/templates/order/user_open_order.html" afterDir="false" />
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E56">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mj-Hajipour/EShopp.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Mj-Hajipour/EShop.git&quot;,
     &quot;accountId&quot;: &quot;2ed3dfc9-65c5-4c81-aecc-9b853190261d&quot;
   }
 }</component>
@@ -232,31 +231,27 @@
       <workItem from="1736399899120" duration="401000" />
       <workItem from="1736575211542" duration="6020000" />
       <workItem from="1736703308764" duration="2308000" />
-      <workItem from="1736748706379" duration="654000" />
-    </task>
-    <task id="LOCAL-00006" summary="EShop E34 =&gt; End">
-      <option name="closed" value="true" />
-      <created>1729574621832</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1729574621832</updated>
-    </task>
-    <task id="LOCAL-00007" summary="End of E35">
-      <option name="closed" value="true" />
-      <created>1729575987262</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1729575987262</updated>
-    </task>
-    <task id="LOCAL-00008" summary="E36 =&gt; 6:22">
-      <option name="closed" value="true" />
-      <created>1729577081420</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1729577081420</updated>
+      <workItem from="1736748706379" duration="963000" />
+      <workItem from="1736758016389" duration="4871000" />
+      <workItem from="1736782474973" duration="2906000" />
+      <workItem from="1736872091249" duration="4392000" />
+      <workItem from="1736958962617" duration="4653000" />
+      <workItem from="1737006619545" duration="2968000" />
+      <workItem from="1737009810798" duration="38000" />
+      <workItem from="1737010017164" duration="26000" />
+      <workItem from="1737010692511" duration="893000" />
+      <workItem from="1737016125900" duration="2636000" />
+      <workItem from="1737041514475" duration="2279000" />
+      <workItem from="1737043856735" duration="25000" />
+      <workItem from="1737118442482" duration="9000" />
+      <workItem from="1737120792584" duration="21000" />
+      <workItem from="1737120838643" duration="20000" />
+      <workItem from="1737120877429" duration="7000" />
+      <workItem from="1737131676628" duration="521000" />
+      <workItem from="1737132209844" duration="263000" />
+      <workItem from="1737132491915" duration="298000" />
+      <workItem from="1737132806360" duration="1308000" />
+      <workItem from="1737268475122" duration="2907000" />
     </task>
     <task id="LOCAL-00009" summary="E36 =&gt; 6:22">
       <option name="closed" value="true" />
@@ -626,7 +621,31 @@
       <option name="project" value="LOCAL" />
       <updated>1736578188946</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="End of E55">
+      <option name="closed" value="true" />
+      <created>1736749452357</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1736749452358</updated>
+    </task>
+    <task id="LOCAL-00056" summary="End of E55">
+      <option name="closed" value="true" />
+      <created>1736749470788</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1736749470788</updated>
+    </task>
+    <task id="LOCAL-00057" summary="End of E55">
+      <option name="closed" value="true" />
+      <created>1736749491188</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1736749491188</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,8 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="EShop E34 =&gt; End" />
-    <MESSAGE value="End of E35" />
     <MESSAGE value="EShop E36 =&gt; 6:22" />
     <MESSAGE value="E36 =&gt; 6:22" />
     <MESSAGE value="Remove __pycache__ files and add to .gitignore" />
@@ -681,6 +698,8 @@
     <MESSAGE value="End of E52" />
     <MESSAGE value="End of E53" />
     <MESSAGE value="End of E54" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E54" />
+    <MESSAGE value="End of E55" />
+    <MESSAGE value="End of E56" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E56" />
   </component>
 </project>

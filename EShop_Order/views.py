@@ -1,14 +1,16 @@
 from itertools import product
-
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 from django.shortcuts import redirect, render
-
 from EShop_Order.form import UserNewOrderForm
 from EShop_Order.models import  Order
 from EShop_Product.models import Product
 
 
-# Create your views here.
+
+
+
+#Views====>
 
 @login_required(login_url='/login')
 def add_user_order(request):
@@ -42,4 +44,46 @@ def user_open_order(request):
         context['order']= open_order
         context['details']=open_order.orderdetails_set.all()
     return render(request,'order/user_open_order.html',context)
+
+############################################Zarin Pal############################
+import logging
+from django.urls import reverse
+from azbankgateways import (
+    bankfactories,
+    models as bank_models,
+    default_settings as settings,
+)
+from azbankgateways.exceptions import AZBankGatewaysException
+
+
+def go_to_gateway_view(request):
+    # خواندن مبلغ از هر جایی که مد نظر است
+    amount = 50000
+    # تنظیم شماره موبایل کاربر از هر جایی که مد نظر است
+    user_mobile_number = "+989112221234"  # اختیاری
+
+    factory = bankfactories.BankFactory()
+    try:
+        bank = (
+            factory.create()
+        )  # or factory.create(bank_models.BankType.BMI) or set identifier
+        bank.set_request(request)
+        bank.set_amount(amount)
+        # یو آر ال بازگشت به نرم افزار برای ادامه فرآیند
+        bank.set_client_callback_url("/callback-gateway")
+        bank.set_mobile_number(user_mobile_number)  # اختیاری
+
+        # در صورت تمایل اتصال این رکورد به رکورد فاکتور یا هر چیزی که بعدا بتوانید ارتباط بین محصول یا خدمات را با این
+        # پرداخت برقرار کنید.
+        bank_record = bank.ready()
+
+        # هدایت کاربر به درگاه بانک
+        return bank.redirect_gateway()
+    except AZBankGatewaysException as e:
+        logging.critical(e)
+        # redirect to failed page.
+        raise e
+
+
+
 

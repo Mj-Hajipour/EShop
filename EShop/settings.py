@@ -13,6 +13,8 @@ import os
 
 from pathlib import Path
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -49,7 +51,8 @@ INSTALLED_APPS = [
     'EShop_Sliders',
     'EShop_Contact',
     'EShop_Settings',
-    'EShop_Order'
+    'EShop_Order',
+    'azbankgateways'
 ]
 
 
@@ -145,3 +148,62 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+## BankGateWays
+
+AZ_IRANIAN_BANK_GATEWAYS = {
+    "GATEWAYS": {
+        # "BMI": {
+        #     "MERCHANT_CODE": "<YOUR MERCHANT CODE>",
+        #     "TERMINAL_CODE": "<YOUR TERMINAL CODE>",
+        #     "SECRET_KEY": "<YOUR SECRET CODE>",
+        # },
+        # "SEP": {
+        #     "MERCHANT_CODE": "<YOUR MERCHANT CODE>",
+        #     "TERMINAL_CODE": "<YOUR TERMINAL CODE>",
+        # },
+        # "ZARINPAL": {
+        #     "MERCHANT_CODE": "69d732c8-6230-434f-b5dd-92cbf6e72227",
+        #     "SANDBOX": 1,  # 0 disable, 1 active
+        # },
+        # "IDPAY": {
+        #     "MERCHANT_CODE":"69d732c8-6230-434f-b5dd-92cbf6e72227",
+        #     "METHOD": "POST",  # GET or POST
+        #     "X_SANDBOX": 1,  # 0 disable, 1 active
+        # },
+        # "ZIBAL": {
+        #     "MERCHANT_CODE": "zibal",
+        # },
+        # "BAHAMTA": {
+        #     "MERCHANT_CODE": "<YOUR MERCHANT CODE>",
+        # },
+        # "MELLAT": {
+        #     "TERMINAL_CODE": "<YOUR TERMINAL CODE>",
+        #     "USERNAME": "<YOUR USERNAME>",
+        #     "PASSWORD": "<YOUR PASSWORD>",
+        # },
+        "PAYV1": {
+            "MERCHANT_CODE": "test",
+            "X_SANDBOX": 1,  # 0 disable, 1 active
+        },
+    },
+    "IS_SAMPLE_FORM_ENABLE": True,  # اختیاری و پیش فرض غیر فعال است
+    "DEFAULT": "PAYV1",
+    "CURRENCY": "IRR",  # اختیاری
+    "TRACKING_CODE_QUERY_PARAM": "tc",  # اختیاری
+    "TRACKING_CODE_LENGTH": 16,  # اختیاری
+    "SETTING_VALUE_READER_CLASS": "azbankgateways.readers.DefaultReader",  # اختیاری
+    "BANK_PRIORITIES": [
+
+    ],  # اختیاری
+    "IS_SAFE_GET_GATEWAY_PAYMENT": False,  # اختیاری، بهتر است True بزارید.
+    "CUSTOM_APP": None,  # اختیاری
+}
+
+
+#SANDBOX MODE
+
+MERCHANT  =  "69d732c8-6230-434f-b5dd-92cbf6e72227"
+
+SANDBOX  =  True
