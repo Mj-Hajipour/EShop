@@ -168,13 +168,13 @@ AZ_IRANIAN_BANK_GATEWAYS = {
         #     "SANDBOX": 1,  # 0 disable, 1 active
         # },
         # "IDPAY": {
-        #     "MERCHANT_CODE":"69d732c8-6230-434f-b5dd-92cbf6e72227",
+        #     "MERCHANT_CODE":"IDPAY",
         #     "METHOD": "POST",  # GET or POST
         #     "X_SANDBOX": 1,  # 0 disable, 1 active
         # },
-        # "ZIBAL": {
-        #     "MERCHANT_CODE": "zibal",
-        # },
+        "ZIBAL": {
+            "MERCHANT_CODE": "zibal",
+        },
         # "BAHAMTA": {
         #     "MERCHANT_CODE": "<YOUR MERCHANT CODE>",
         # },
@@ -183,13 +183,13 @@ AZ_IRANIAN_BANK_GATEWAYS = {
         #     "USERNAME": "<YOUR USERNAME>",
         #     "PASSWORD": "<YOUR PASSWORD>",
         # },
-        "PAYV1": {
-            "MERCHANT_CODE": "test",
-            "X_SANDBOX": 1,  # 0 disable, 1 active
-        },
+        # "PAYV1": {
+        #     "MERCHANT_CODE": "test",
+        #     "X_SANDBOX": 1,  # 0 disable, 1 active
+        # },
     },
     "IS_SAMPLE_FORM_ENABLE": True,  # اختیاری و پیش فرض غیر فعال است
-    "DEFAULT": "PAYV1",
+    "DEFAULT":'ZIBAL',
     "CURRENCY": "IRR",  # اختیاری
     "TRACKING_CODE_QUERY_PARAM": "tc",  # اختیاری
     "TRACKING_CODE_LENGTH": 16,  # اختیاری

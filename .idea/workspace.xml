@@ -7,10 +7,12 @@
     <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E56">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/templates/order/user_open_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/templates/order/user_open_order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_Order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,15 +253,15 @@
       <workItem from="1737132209844" duration="263000" />
       <workItem from="1737132491915" duration="298000" />
       <workItem from="1737132806360" duration="1308000" />
-      <workItem from="1737268475122" duration="2907000" />
-    </task>
-    <task id="LOCAL-00009" summary="E36 =&gt; 6:22">
-      <option name="closed" value="true" />
-      <created>1729577151380</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1729577151380</updated>
+      <workItem from="1737268475122" duration="8848000" />
+      <workItem from="1737303651209" duration="3071000" />
+      <workItem from="1737459456396" duration="8000" />
+      <workItem from="1737459672164" duration="5863000" />
+      <workItem from="1737525157974" duration="144000" />
+      <workItem from="1737525319902" duration="20000" />
+      <workItem from="1737561703803" duration="256000" />
+      <workItem from="1737562005016" duration="4913000" />
+      <workItem from="1737699004075" duration="948000" />
     </task>
     <task id="LOCAL-00010" summary="E36 =&gt; 6:22">
       <option name="closed" value="true" />
@@ -645,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736749491188</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="End of E56">
+      <option name="closed" value="true" />
+      <created>1737271405480</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1737271405481</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

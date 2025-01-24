@@ -1,12 +1,27 @@
+import json
+import time
+from datetime import datetime
+from http.client import responses
 from itertools import product
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from EShop_Order.form import UserNewOrderForm
 from EShop_Order.models import  Order
 from EShop_Product.models import Product
+from azbankgateways.models import banks
 
 
+
+### payment package###
+from django.http import HttpResponse, Http404, JsonResponse
+import logging
+from django.urls import reverse
+from azbankgateways import (
+    bankfactories,
+    models as bank_models,
+    default_settings as settings,
+)
+from azbankgateways.exceptions import AZBankGatewaysException
 
 
 
@@ -38,52 +53,90 @@ def user_open_order(request):
     context={
         'order':None,
          'details':None,
+          'total':0,
     }
+
     open_order = Order.objects.filter(owner_id=request.user.id, is_paid=False).first()
     if open_order is not None:
         context['order']= open_order
         context['details']=open_order.orderdetails_set.all()
+        Total=open_order.get_total_price()
+        def format_currency(amount):
+            return '{: ,}'.format(amount)
+        context['total']=format_currency(Total)
     return render(request,'order/user_open_order.html',context)
 
 ############################################Zarin Pal############################
-import logging
-from django.urls import reverse
-from azbankgateways import (
-    bankfactories,
-    models as bank_models,
-    default_settings as settings,
-)
-from azbankgateways.exceptions import AZBankGatewaysException
 
 
-def go_to_gateway_view(request):
-    # خواندن مبلغ از هر جایی که مد نظر است
-    amount = 50000
-    # تنظیم شماره موبایل کاربر از هر جایی که مد نظر است
-    user_mobile_number = "+989112221234"  # اختیاری
 
-    factory = bankfactories.BankFactory()
+def go_to_gateway_view(request,*args,**kwargs):
+    total_price=0
+    open_order = Order.objects.filter(owner_id=request.user.id, is_paid=False).first()
+    if open_order is not None:
+            total_price=open_order.get_total_price()
+            # خواندن مبلغ از هر جایی که مد نظر است
+            amount = total_price
+            # تنظیم شماره موبایل کاربر از هر جایی که مد نظر است
+            user_mobile_number = "+989112221234"  # اختیاری
+
+            factory = bankfactories.BankFactory()
+            try:
+                bank = (
+                    factory.create()
+                )  # or factory.create(bank_models.BankType.BMI) or set identifier
+                bank.set_request(request)
+                bank.set_amount(amount)
+                # یو آر ال بازگشت به نرم افزار برای ادامه فرآیند
+                bank.set_client_callback_url(f"/callback-gateway/{open_order.id}")
+                bank.set_mobile_number(user_mobile_number)  # اختیاری
+
+                # در صورت تمایل اتصال این رکورد به رکورد فاکتور یا هر چیزی که بعدا بتوانید ارتباط بین محصول یا خدمات را با این
+                # پرداخت برقرار کنید.
+                bank_record = bank.ready()
+
+                # هدایت کاربر به درگاه بانک
+                return bank.redirect_gateway()
+            except AZBankGatewaysException as e:
+                logging.critical(e)
+                # redirect to failed page.
+                raise e
+    raise Http404('Page not found')
+
+
+def callback_gateway_view(request,*args,**kwargs):
+    order_id = kwargs.get('order_id')
+    tracking_code = request.GET.get(settings.TRACKING_CODE_QUERY_PARAM, None)
+    if not tracking_code:
+        logging.debug("این لینک معتبر نیست.")
+        raise Http404
+
     try:
-        bank = (
-            factory.create()
-        )  # or factory.create(bank_models.BankType.BMI) or set identifier
-        bank.set_request(request)
-        bank.set_amount(amount)
-        # یو آر ال بازگشت به نرم افزار برای ادامه فرآیند
-        bank.set_client_callback_url("/callback-gateway")
-        bank.set_mobile_number(user_mobile_number)  # اختیاری
+        bank_record = bank_models.Bank.objects.get(tracking_code=tracking_code)
+    except bank_models.Bank.DoesNotExist:
+        logging.debug("این لینک معتبر نیست.")
+        raise Http404
 
-        # در صورت تمایل اتصال این رکورد به رکورد فاکتور یا هر چیزی که بعدا بتوانید ارتباط بین محصول یا خدمات را با این
-        # پرداخت برقرار کنید.
-        bank_record = bank.ready()
+    # در این قسمت باید از طریق داده هایی که در بانک رکورد وجود دارد، رکورد متناظر یا هر اقدام مقتضی دیگر را انجام دهیم
+    if bank_record.is_success:
+        # پرداخت با موفقیت انجام پذیرفته است و بانک تایید کرده است.
+        # می توانید کاربر را به صفحه نتیجه هدایت کنید یا نتیجه را نمایش دهید.
+        user_order=Order.objects.get_queryset().get(id=order_id)
+        user_order.is_paid=True
+        user_order.payment_date=datetime.now()
+        user_order.Trc=tracking_code
+        value=banks.Bank.objects.get(tracking_code=tracking_code)
+        user_order.GateWay_name=value.bank_type
+        ext_info=value.extra_information
+        responses_dict=json.loads(ext_info)
+        user_order.status=responses_dict['message']
+        user_order.cartNumber=responses_dict['cardNumber']
+        user_order.save()
+        return HttpResponse(f"پرداخت شماره {order_id} با موفقیت انجام شد.")
 
-        # هدایت کاربر به درگاه بانک
-        return bank.redirect_gateway()
-    except AZBankGatewaysException as e:
-        logging.critical(e)
-        # redirect to failed page.
-        raise e
-
-
+    # پرداخت موفق نبوده است. اگر پول کم شده است ظرف مدت ۴۸ ساعت پول به حساب شما بازخواهد گشت.
+    return HttpResponse(
+        f"پرداخت با شمار {order_id} با شکست مواجه شده است. اگر پول کم شده است ظرف مدت ۴۸ ساعت پول به حساب شما بازخواهد گشت."
+    )
 
 
