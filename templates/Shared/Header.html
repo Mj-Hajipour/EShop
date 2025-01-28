@@ -1,6 +1,16 @@
 {% load static %}
 {% url 'home' as home_url %}
 {% url 'products' as products_url %}
+<style>
+    .badge{
+  background-color: red;
+  color: white;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        border-radius: 50%;
+}
+</style>
 <header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -50,7 +60,11 @@
 							<ul class="nav navbar-nav">
 								<li><a href="#"><i class="fa fa-user"></i> حساب کاربـری</a></li>
 								<li><a href="#"><i class="fa fa-star"></i> لیست علاقه مندی ها</a></li>
-                                <li><a href="/open-order"><i class="fa fa-shopping-cart"></i> سبد خریـد</a></li>
+                                <li><a href="/open-order"><i class="fa fa-shopping-cart"></i> سبد خریـد</a>
+                                    {% if OrCount > 0 %}
+                                        <span class="badge" id="item-count">{{ OrCount }}</span>
+                                    {% endif %}
+                                </li>
                                 {% if  not  request.user.is_authenticated %}
                                    <li><a href="/login"><i class="fa fa-lock"></i> ورود</a></li>
                                     <li><a href="/register"><i class="fa fa-lock"></i>ثبت نام</a></li>

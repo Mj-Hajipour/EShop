@@ -7,6 +7,7 @@
 				<ol class="breadcrumb">
 				  <li><a href="#">خانـه</a></li>
 				  <li class="active">لیست محصولات موجود در سبد خرید شما</li>
+                    <li>{{ OrCount }}</li>
 				</ol>
 			</div><!--/breadcrums-->
 			 {% if order is not None and details|length > 0 %}
@@ -40,14 +41,14 @@
 {#									<a class="cart_quantity_up" href=""> + </a>#}
 {#									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">#}
 {#									<a class="cart_quantity_down" href=""> - </a>#}
-                                    <span>{{ detail.count }}</span>
+                                    <span>{{ detail.quantity }}</span>
 								</div>
 							</td>
 							    <td class="cart_total">
-								<p class="cart_total_price">{{ detail.get_detail_sum }} ريال</p>
+								<p class="cart_total_price">{{ detail.get_detail_sum }} تومان</p>
 							</td>
 							    <td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+								<a class="cart_quantity_delete" href="/remove-order-detail/{{ detail.product.id }}"><i class="fa fa-times"></i></a>
 							</td>
 						   </tr>
 						{% endfor %}

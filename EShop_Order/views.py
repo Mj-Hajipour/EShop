@@ -1,14 +1,14 @@
 import json
-import time
 from datetime import datetime
-from http.client import responses
 from itertools import product
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
 from EShop_Order.form import UserNewOrderForm
-from EShop_Order.models import  Order
+from EShop_Order.models import Order, OrderDetails
 from EShop_Product.models import Product
 from azbankgateways.models import banks
+
 
 
 
@@ -22,6 +22,8 @@ from azbankgateways import (
     default_settings as settings,
 )
 from azbankgateways.exceptions import AZBankGatewaysException
+
+
 
 
 
@@ -52,19 +54,46 @@ def add_user_order(request):
 def user_open_order(request):
     context={
         'order':None,
-         'details':None,
-          'total':0,
+        'details':None,
+        'total':0,
     }
 
     open_order = Order.objects.filter(owner_id=request.user.id, is_paid=False).first()
     if open_order is not None:
         context['order']= open_order
-        context['details']=open_order.orderdetails_set.all()
+        order_details=open_order.orderdetails_set.all()
+        grouped_details={}
+        for detail in order_details:
+            Product_id=detail.product_id
+            if Product_id not in grouped_details:
+                grouped_details[Product_id] = {
+                    'product': detail.product,
+                    'quantity': detail.count,
+                }
+            else:
+                grouped_details[Product_id]['quantity'] += detail.count
+
+        context['details'] = list(grouped_details.values())
         Total=open_order.get_total_price()
         def format_currency(amount):
             return '{: ,}'.format(amount)
         context['total']=format_currency(Total)
     return render(request,'order/user_open_order.html',context)
+
+
+@login_required(login_url='/login')
+def remove_order_detail(request,*args,**kwargs):
+    product_id=kwargs.get('detail_id')
+    owner_id=request.user.id
+    if product_id is not None:
+         order_detail_product=OrderDetails.objects.filter(product_id=product_id , order__owner_id=owner_id)
+         if order_detail_product.exists():
+          order_detail_product.delete()
+          return redirect('/open-order')
+    return redirect('/_404_view')
+
+
+
 
 ############################################Zarin Pal############################
 
