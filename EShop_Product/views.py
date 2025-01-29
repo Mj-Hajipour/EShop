@@ -1,4 +1,4 @@
-import itertools
+
 
 from django.http import Http404
 from django.shortcuts import render
@@ -7,7 +7,7 @@ from django.views.generic import ListView
 from EShop_Order.form import UserNewOrderForm
 from EShop_products_category.models import ProductCategory
 from .models import Product, ProductGallery
-
+from common.utils import my_grouper
 
 # Create your views here.
 
@@ -32,9 +32,7 @@ class ProductsListByCategory(ListView):
              raise Http404('صفحه مورد نظر یافت نشد')
          return  Product.objects.get_products_by_category(category_name)
 
-def my_grouper(n,iterable):
-    args = [iter(iterable)] * n
-    return ([e for e in t if e is not None] for t in itertools.zip_longest(*args))
+
 
 
 
@@ -46,6 +44,10 @@ def product_detail(request,*args,**kwargs):
 
     if  product is None or not product.active:
         raise Http404('محصول مورد نظر یافت نشد')
+
+
+    product.visit_count = product.visit_count + 1
+    product.save()
 
     related_products=Product.objects.get_queryset().filter(categories__product=product).distinct()
 

@@ -8,7 +8,7 @@ from EShop_Order.form import UserNewOrderForm
 from EShop_Order.models import Order, OrderDetails
 from EShop_Product.models import Product
 from azbankgateways.models import banks
-
+from common.utils import format_currency
 
 
 
@@ -75,8 +75,6 @@ def user_open_order(request):
 
         context['details'] = list(grouped_details.values())
         Total=open_order.get_total_price()
-        def format_currency(amount):
-            return '{: ,}'.format(amount)
         context['total']=format_currency(Total)
     return render(request,'order/user_open_order.html',context)
 

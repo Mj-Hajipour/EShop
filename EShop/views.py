@@ -1,9 +1,14 @@
+from itertools import product
+
 from django.shortcuts import render,redirect
 
 from EShop_Order.models import Order, OrderDetails
+from EShop_Product.models import Product
+from EShop_Product.views import products
 from EShop_Sliders.models import Slider
 from EShop_Settings.models import SiteSettings
 
+from common.utils import my_grouper
 
 
 #header Code behind
@@ -54,9 +59,14 @@ def footer(request, *args, **kwargs):
     return  render(request, 'Shared/Footer.html',context)
 def home_page(request):
     sliders=Slider.objects.all()
+    most_visit_products=Product.objects.all().order_by('-visit_count')[:8]
+    last_product=Product.objects.all().order_by('-id')[:8]
+
     context={
         'data':'این فروشگاه با فریم ورک django نوشته شده است',
-        'sliders':sliders
+        'sliders':sliders,
+        'most_visit':my_grouper(4,most_visit_products),
+        'last_product':my_grouper(4,last_product),
     }
     return render(request,"home_page.html",context)
 
