@@ -38,7 +38,6 @@ class ProductsListByCategory(ListView):
 
 def product_detail(request,*args,**kwargs):
     selected_product_id=kwargs['productId']
-
     new_order_form = UserNewOrderForm(request.POST or None,initial={'product_id':selected_product_id})
     product=Product.objects.get_by_id(selected_product_id)
 

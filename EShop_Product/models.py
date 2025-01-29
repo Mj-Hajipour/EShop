@@ -4,6 +4,7 @@ from django.db import models
 
 from EShop_products_category.models import ProductCategory
 
+from common.utils import get_file_ext
 
 # Create your models here.
 class ProductsManager(models.Manager):
@@ -29,12 +30,6 @@ class ProductsManager(models.Manager):
          #برای پباده سازی منطق or باید از lookupاستفاده کنیم
          return self.get_queryset().filter(lookup,active=True).distinct()
 
-
-
-def get_file_ext(filename):
-    base_name = os.path.basename(filename)
-    name, ext = os.path.splitext(base_name)
-    return name, ext
 
 def upload_image_path(instance, filename):
     name, ext = get_file_ext(filename)

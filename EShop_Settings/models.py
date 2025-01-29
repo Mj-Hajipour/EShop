@@ -1,10 +1,7 @@
 from django.db import models
 import os
+from common.utils import get_file_ext
 
-def get_file_ext(filename):
-    base_name = os.path.basename(filename)
-    name, ext = os.path.splitext(base_name)
-    return name, ext
 
 # Create your models here.
 def upload_settings_image_path(instance, filename):

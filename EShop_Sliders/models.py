@@ -2,13 +2,10 @@ import os
 
 from django.db import models
 
-
+from common.utils import get_file_ext
 # Create your models here.
 
-def get_file_ext(filepath):
-    base_name = os.path.basename(filepath)
-    name, ext = os.path.splitext(base_name)
-    return name, ext
+
 
 def upload_image_path(instance, filename):
     name, ext = get_file_ext(filename)
