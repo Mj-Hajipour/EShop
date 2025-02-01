@@ -61,3 +61,22 @@ class RegisterForm(forms.Form):
         if  is_exist_email:
             raise forms.ValidationError("با این ایمیل قبلا ثبت نام انجام شده است")
         return email
+
+
+class EditUserForm(forms.Form):
+    FirstName = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'لطفا نام کاربری خود را وارد کنید'}),
+        label='نام'
+    )
+    LastName = forms.CharField(
+        widget=forms.TextInput(attrs={'class':'form-control','placeholder':"لطفا نام خانوداگی خود را وارد کنید"}),
+        label='نام خانوادگی'
+    )
+    email = forms.CharField(
+        widget=forms.TextInput(attrs={'placeholder': 'لطفا ایمیل خود را وارد کنید'}),
+        label='ایمیل',
+        validators=[
+            validators.EmailValidator('ایمیل وارد شده معتبر نمی باشد')
+        ]
+    )
+

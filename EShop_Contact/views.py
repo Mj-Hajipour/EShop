@@ -15,7 +15,6 @@ def contact_page(request):
         subject = contact_form.cleaned_data['subject']
         text = contact_form.cleaned_data['text']
         ContactUs.objects.create(full_name=full_name, email=email, subject=subject, text=text)
-        #todo :show user a success message
         contact_form=CreateContactForm()
 
     Site_Settings=SiteSettings.objects.first()

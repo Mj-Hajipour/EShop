@@ -1,12 +1,10 @@
-from itertools import product
-from lib2to3.fixes.fix_input import context
 
-from django.contrib.auth.decorators import login_required
+
+
 from django.shortcuts import render,redirect
 
 from EShop_Order.models import Order, OrderDetails
 from EShop_Product.models import Product
-from EShop_Product.views import products
 from EShop_Sliders.models import Slider
 from EShop_Settings.models import SiteSettings
 
@@ -83,15 +81,3 @@ def about_page(request):
 def _404_view(request):
     return render(request, '404.html')
 
-@login_required(login_url='login')
-def user_account_main_page(request):
-    return render(request,'account/user_account_main.html',{})
-
-@login_required(login_url='login')
-def edit_user_profile(request):
-    user_id=request.user.id
-    return render(request,'account/edit_account.html',{})
-
-
-def user_sidebar(request):
-    return render(request,'account/user_sidebar.html',{})
