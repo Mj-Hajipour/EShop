@@ -2,7 +2,7 @@ from azbankgateways.urls import az_bank_gateways_urls
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from .views import home_page, header, footer, about_page, _404_view
+from .views import home_page, header, footer, about_page, _404_view, user_account_main_page
 from EShop import settings
 
 
@@ -19,6 +19,7 @@ urlpatterns = [
     path('',include('EShop_Contact.urls')),
 
     path('',include('EShop_Order.urls')),
+    path('user',user_account_main_page),
 
     path("bankgateways/", az_bank_gateways_urls()),
 
