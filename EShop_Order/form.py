@@ -1,3 +1,5 @@
+from mimetypes import inited
+
 from django import forms
 
 
@@ -9,3 +11,5 @@ class UserNewOrderForm(forms.Form):
         widget=forms.NumberInput(),
         initial=1
     )
+
+

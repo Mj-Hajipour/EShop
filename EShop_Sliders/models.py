@@ -2,7 +2,9 @@ import os
 
 from django.db import models
 
-from common.utils import get_file_ext
+from common.utils import get_file_ext, delete_old_image
+
+
 # Create your models here.
 
 
@@ -23,3 +25,7 @@ class Slider(models.Model):
        verbose_name_plural = "اسلاید ها"
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+            delete_old_image(self)
+            super().save(*args, **kwargs)

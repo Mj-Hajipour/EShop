@@ -2,29 +2,37 @@
 {% load render_partial %}
 {% block content %}
     <div class="container">
-        <div class="row">
+        <div class="row d-flex flex-md-row">
             <div class="col-md-8">
                 <div class="form-one">
-				<form method="post" action="/user/edit">
-                    {% csrf_token %}
-                    {{ edit_form.FirstName }}
-                    {% for error in edit_form.FirstName.errors %}
-                        <p class="text-danger">{{ error }}</p>
-                    {% endfor %}
-                    {{ edit_form.LastName }}
-                    {% for error in edit_form.LastName.errors %}
-                        <p class="text-danger">{{ error }}</p>
-                    {% endfor %}
-                    {{ edit_form.email }}
-                    {% for error in edit_form.email.errors %}
-                        <p class="text-danger">{{ error }}</p>
-                    {% endfor %}
-
-                      <div class="form-group col-md-12">
-				                <input type="submit" name="submit" class="btn btn-primary pull-right" style="border-radius:15px;" value="ارسـال">
-                      </div>
-                </form>
-           </div>
+                    <form method="post" action="/user/edit">
+                        {% csrf_token %}
+                        {{ edit_form.FirstName.label }}
+                        {{ edit_form.FirstName }}
+                        {% for error in edit_form.FirstName.errors %}
+                            <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                        {{ edit_form.LastName.label }}
+                        {{ edit_form.LastName }}
+                        {% for error in edit_form.LastName.errors %}
+                            <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                         {{ edit_form.email.label }}
+                        {{ edit_form.email }}
+                        {% for error in edit_form.email.errors %}
+                            <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                        {{ edit_form.profile_pic.label }}
+                        {{ edit_form.profile_pic }}
+                        {% for error in edit_form.email.errors %}
+                            <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                        <div class="form-group col-md-12">
+                            <input type="submit" name="submit" class="btn btn-primary pull-right"
+                                   style="border-radius:15px;" value="ارسـال">
+                        </div>
+                    </form>
+                </div>
             </div>
             {% render_partial 'EShop_account.views.user_sidebar' %}
         </div>

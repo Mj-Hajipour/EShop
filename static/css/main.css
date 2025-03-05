@@ -924,7 +924,6 @@ h2.title {
 
 .single-products {
   position: relative;
-    min-height: 450px;
 }
 
 .new, .sale {
@@ -1163,7 +1162,6 @@ h2.title {
 
 .about-address {
 	margin-top: 20px;
-
 }
 
 .about-address p {
@@ -2079,10 +2077,20 @@ h2.title {
 
 
 .form-two, .form-one {
-  float: right;
-  width: 49%
+
+
+    width: 49%;
+
 }
 
+.form>form>input{
+background:#F0F0E9;
+  border: 0 none;
+  margin-bottom:10px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 300;
+}
 
 .shopper-info > form > input, 
 .form-two > form > select, 
@@ -2133,7 +2141,6 @@ h2.title {
   margin-bottom:125px;
   margin-top: -35px;
   padding: 20px 10px;
-	background: #f5f5f5;
 }
 .custom-shadow:focus{
      box-shadow: 0 0 5px rgba(254, 152, 15);
@@ -2150,7 +2157,7 @@ h2.title {
     border-radius: 0 15px 15px 0;
      border: 2px solid rgb(254,152,15);
 }
-.BTN{
+#BTN{
     margin-left: 0;
     border-radius: 15px 0 0 15px;
     position: absolute;
@@ -2755,3 +2762,6 @@ h2.title {
 }
 
 
+.profile_pic{
+    width: 100px;border-radius: 50%;border:2px solid #FE980F;margin-top: 30px;
+}

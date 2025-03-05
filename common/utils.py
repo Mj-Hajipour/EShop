@@ -16,7 +16,17 @@ def get_file_ext(filepath):
     base_name = os.path.basename(filepath)
     name, ext = os.path.splitext(base_name)
     return name, ext
+def delete_old_image(instance):
+    try:
+         if instance.pk:
+             old_instance = instance.__class__.objects.get(pk=instance.pk)
+             if old_instance.image:
+                 if os.path.isfile(old_instance.image.path):
+                     os.remove(old_instance.image.path)
 
-
+    except instance.__class__.DoesNotExist:
+        pass
+    except Exception as ex:
+        print(f"Error: {ex}")
 
 

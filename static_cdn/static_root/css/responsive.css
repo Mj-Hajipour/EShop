@@ -525,3 +525,6 @@ ul.sub-menu{
 }
 
 }
+.profile_pic{
+    width: 100px;border-radius: 50%;border:2px solid #FE980F;margin-top: 30px;
+}

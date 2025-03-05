@@ -1,6 +1,5 @@
 {% extends 'Shared/_MainLayout.html' %}
 {% block content %}
-
 	<section id="cart_items">
 		<div class="container">
 			<div class="breadcrumbs">
@@ -34,7 +33,7 @@
 								    <p>شناسـه :  {{ detail.product.id }}</p>
                                 </td>
                                 <td class="cart_price">
-								<p>{{ detail.product.price }} ريال</p>
+								<p>{{ detail.product.price }}تومان</p>
 							</td>
                                 <td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -64,13 +63,12 @@
 
 		</div>
 	</section> <!--/#cart_items-->
-    <section id="do_action">
+    <section id="do_action" >
 		<div class="container">
 			<div class="heading">
 				<h3>نهایی کردن سفارش یا ادامه خریـد ؟! </h3>
 			</div>
-			<div class="row">
-
+			<div class="row text-center" style="display: flex;align-items: center;justify-content: center">
 				<div class="col-sm-6">
 					<div class="total_area">
 						<ul>
@@ -78,8 +76,12 @@
 							<li>هزینـه حمل و نقـل <span>رایـگان</span></li>
 							<li>مجمـوع <span>{{ total }} تومان</span></li>
 						</ul>
-							<a class="btn btn-default update" href="shop.html">به روز رسانی سبـد خریـد </a>
-							<a class="btn btn-default check_out" href="/request">پرداخت</a>
+                        {% if factor is False %}
+                            <a class="btn btn-default update" href="/user/panel">تاییداطلاعات گیرنده</a>
+                            {% elif factor is True %}
+                            <a class="btn btn-default check_out" href="/request">پرداخت</a>
+                        {% endif %}
+
 					</div>
 				</div>
 			</div>

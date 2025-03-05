@@ -163,7 +163,7 @@ AZ_IRANIAN_BANK_GATEWAYS = {
         #     "MERCHANT_CODE": "<YOUR MERCHANT CODE>",
         #     "TERMINAL_CODE": "<YOUR TERMINAL CODE>",
         # },
-        # "ZARINPAL": {
+        # "ZARINPALV4": {
         #     "MERCHANT_CODE": "69d732c8-6230-434f-b5dd-92cbf6e72227",
         #     "SANDBOX": 1,  # 0 disable, 1 active
         # },

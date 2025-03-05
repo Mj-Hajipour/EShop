@@ -4,17 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E60">
+    <list default="true" id="aa5fd6a2-8d24-468d-bd3f-e73783aafbd7" name="Changes" comment="End of E61">
+      <change afterPath="$PROJECT_DIR$/EShop_account/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EShop_account/templates/account/user_history_orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EShop_account/templates/account/user_panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8f3ad4f3-2298-4726-9ce6-c4942b178c8f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8f3ad4f3-2298-4726-9ce6-c4942b178c8f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EShop_Contact/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Contact/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/templates/order/user_open_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/templates/order/user_open_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Product/templates/product_item_component.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Product/templates/product_item_component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Settings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Settings/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_Sliders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_Sliders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_account/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_account/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_account/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_account/templates/account/edit_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/templates/account/edit_account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_account/templates/account/user_account_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/templates/account/user_account_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_account/templates/account/user_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/templates/account/user_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EShop_account/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EShop_account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EShop_account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/1_مرغ.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/4_آموزش_ساخت_برنامه_پسورد_منیجر_با_پایتون.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/None_آموزش_جامع_یادگیری_ماشین_و_زیرشاخه_ها_در_پایتون_با_رویکرد_مالی.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/None_آموزش_زبان_برنامه_نویسی_پایتون_مقدماتی.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/None_آموزش_معاملات_الگوریتمی_ارز_دیجیتال_در_پایتون.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/None_دوره_آموزشی_کتابخانه_Discord.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/None_مبانی_رمزنگاری_با_پایتون.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/None_مرغ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/galleries/None_دوره_آموزشی_جنگو.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/settings/1_شرکت_نرم_افزاری_ابراز_داده_ایرانیان_10gv7cv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/settings/1_شرکت_نرم_افزاری_ابراز_داده_ایرانیان_FbpU22e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/settings/1_شرکت_نرم_افزاری_ابراز_داده_ایرانیان_dDvOyLX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/settings/1_شرکت_نرم_افزاری_ابراز_داده_ایرانیان_fjFOQ8o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/settings/1_شرکت_نرم_افزاری_ابراز_داده_ایرانیان_tQoWc8i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/sliders/None_آموزش_ساخت_ربات_تلگرام_با_Python.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/sliders/None_دوره_آموزش_پروژه_محور_فریم_ورک_Flask.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_cdn/static_root/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_cdn/static_root/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Shared/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/Header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Shared/_FooterReferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Shared/_FooterReferences.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,27 +128,57 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Django Server.EShop.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Master/App_Projects/Projects/Gym&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Master\App_Projects\Projects\EShop\EShop_account\templates\account" />
       <recent name="D:\Master\App_Projects\Projects\EShop\templates" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.EShop">
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EShop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EShop_account" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EShop_account/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="EShop" type="Python.DjangoServer" factoryName="Django server">
       <module name="EShop" />
       <option name="ENV_FILES" value="" />
@@ -117,14 +189,13 @@
         <env name="DJANGO_SETTINGS_MODULE" value="EShop.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (EShop)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="5000" />
-      <option name="host" value="localhost" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -133,12 +204,17 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.models" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
-        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PY-243.23654.177" />
+        <option value="bundled-python-sdk-91d3a02ef49d-43b77aa2d136-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.23654.177" />
       </set>
     </attachedChunks>
   </component>
@@ -277,15 +353,61 @@
       <workItem from="1738042060386" duration="175000" />
       <workItem from="1738071929416" duration="3104000" />
       <workItem from="1738166859612" duration="8322000" />
-      <workItem from="1738388955546" duration="10164000" />
-    </task>
-    <task id="LOCAL-00015" summary="End of E38">
-      <option name="closed" value="true" />
-      <created>1730362890595</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1730362890595</updated>
+      <workItem from="1738388955546" duration="11486000" />
+      <workItem from="1738426217763" duration="10502000" />
+      <workItem from="1738474815829" duration="63000" />
+      <workItem from="1738561251107" duration="9733000" />
+      <workItem from="1738587476157" duration="3403000" />
+      <workItem from="1738645979701" duration="12627000" />
+      <workItem from="1738772388338" duration="151000" />
+      <workItem from="1738774639721" duration="21000" />
+      <workItem from="1738775145693" duration="100000" />
+      <workItem from="1738775762898" duration="30000" />
+      <workItem from="1738819229011" duration="11028000" />
+      <workItem from="1738830439448" duration="504000" />
+      <workItem from="1738830982354" duration="66000" />
+      <workItem from="1738831085886" duration="3305000" />
+      <workItem from="1738851254788" duration="1928000" />
+      <workItem from="1738857270907" duration="2707000" />
+      <workItem from="1739005268288" duration="222000" />
+      <workItem from="1739014978194" duration="5172000" />
+      <workItem from="1739029603180" duration="3857000" />
+      <workItem from="1739033531276" duration="1000" />
+      <workItem from="1739119456046" duration="120000" />
+      <workItem from="1739119585904" duration="140000" />
+      <workItem from="1739119820018" duration="45000" />
+      <workItem from="1739119885420" duration="36000" />
+      <workItem from="1739120070605" duration="33000" />
+      <workItem from="1739120136307" duration="23000" />
+      <workItem from="1739120196838" duration="11000" />
+      <workItem from="1739120426531" duration="42000" />
+      <workItem from="1739120527248" duration="6000" />
+      <workItem from="1739120646063" duration="17000" />
+      <workItem from="1739120728291" duration="4665000" />
+      <workItem from="1739164886444" duration="7265000" />
+      <workItem from="1739271033174" duration="1696000" />
+      <workItem from="1739337987992" duration="6749000" />
+      <workItem from="1739537502004" duration="10503000" />
+      <workItem from="1739595155768" duration="2000" />
+      <workItem from="1739604521963" duration="243000" />
+      <workItem from="1739775518430" duration="3968000" />
+      <workItem from="1739779736939" duration="9250000" />
+      <workItem from="1739943511694" duration="4941000" />
+      <workItem from="1740032007986" duration="11605000" />
+      <workItem from="1740048455210" duration="1206000" />
+      <workItem from="1740056247951" duration="2858000" />
+      <workItem from="1740059126086" duration="654000" />
+      <workItem from="1740242215565" duration="28000" />
+      <workItem from="1740329884358" duration="2312000" />
+      <workItem from="1740333286054" duration="8000" />
+      <workItem from="1740381934846" duration="8774000" />
+      <workItem from="1740462611433" duration="517000" />
+      <workItem from="1740585481501" duration="5790000" />
+      <workItem from="1740725765197" duration="21000" />
+      <workItem from="1740725827398" duration="175000" />
+      <workItem from="1740844984376" duration="9912000" />
+      <workItem from="1740931741436" duration="62000" />
+      <workItem from="1741165855488" duration="2286000" />
     </task>
     <task id="LOCAL-00016" summary="End of E39">
       <option name="closed" value="true" />
@@ -671,7 +793,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738395892065</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="End of E61">
+      <option name="closed" value="true" />
+      <created>1738414049250</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1738414049250</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +831,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="End of E37" />
     <MESSAGE value="End of E38" />
     <MESSAGE value="End of E39" />
     <MESSAGE value="End of E40" />
@@ -726,6 +855,10 @@
     <MESSAGE value="End of E59" />
     <MESSAGE value="End of E59+1" />
     <MESSAGE value="End of E60" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of E60" />
+    <MESSAGE value="End of E61" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of E61" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EShop$models.coverage" NAME="models Coverage Results" MODIFIED="1739796877388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EShop_account" />
   </component>
 </project>

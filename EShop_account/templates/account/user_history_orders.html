@@ -1,0 +1,96 @@
+{% extends 'Shared/_MainLayout.html' %}
+{% load render_partial %}
+{% block content %}
+    <style>
+     .total{
+         font-weight: bold;
+     }
+    </style>
+    <!-- Modal -->
+    {% for invoice in Ivoices %}
+        <div class="modal fade" id="invoiceModal{{ invoice.id }}" tabindex="-1" role="dialog"
+             aria-labelledby="tableModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center" id="tableModalLabel">جزئیات سفارش</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="text-center">محصول</th>
+                                <th class="text-center">تعداد</th>
+                                <th class="text-center">قیمت</th>
+                                <th class="text-center">مجموع قیمت</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for detail in invoice.order.orderdetails_set.all %}
+                                <tr>
+                                    <th class="text-center">{{ detail.product.title }}</th>
+                                    <th class="text-center">{{ detail.count }}</th>
+                                    <th class="text-center">{{ detail.price }}</th>
+                                    <th class="text-center">{{ detail.get_detail_sum }}</th>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="total pull-right">
+                            مجموع قیمت :
+                            <span class="text-black-100">{{ invoice.order.get_total_price }}تومان</span>
+                        </div>
+                        <button type="button" class="btn btn-primary  pull-left" data-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+    <div class="container">
+        <div class="row">
+            {% render_partial 'EShop_account.views.user_sidebar' %}
+            <div class="col-md-8">
+                <h1 class="text-center mt-5">تاریخچه خرید</h1>
+                <div class="invoice-header text-center">
+                    <h2>فاکتورها</h2>
+                </div>
+                <table class="table table-striped invoice-table">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="text-center">شماره فاکتور</th>
+                        <th scope="col" class="text-center">تاریخ</th>
+                        <th scope="col" class="text-center">درگاه پرداخت</th>
+                        <th scope="col" class="text-center">شماره پیگیری</th>
+                        <th scope="col" class="text-center">جزییات</th>
+                        <th scope="col">پیگیری</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for invoice in Ivoices %}
+                        <tr>
+                            <td>{{ invoice.id }}</td>
+                            <td>{{ invoice.order.payment_date }}</td>
+                            <td>{{ invoice.order.GateWay_name }}</td>
+                            <td>{{ invoice.order.Trc }}</td>
+
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
+                                        data-target="#invoiceModal{{ invoice.id }}">
+                                    مشاهده جزئیات
+                                </button>
+                            </td>
+                            <td><a href="" class="btn btn-light"><i class="fa fa-truck"></i></a></td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

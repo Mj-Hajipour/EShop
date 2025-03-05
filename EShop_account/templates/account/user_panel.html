@@ -1,0 +1,111 @@
+{% extends 'Shared/_MainLayout.html' %}
+{% load render_partial %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% render_partial 'EShop_account.views.user_sidebar' %}
+            <div class="col-md-8">
+                <div class="shopper-informations">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="shopper-info">
+                                <p>اطلاعات خریدار</p>
+                                <img src="{{ profile_pic.url }}" class="profile_pic" alt="profilePicture"
+                                     style="width: 100px;border-radius: 50%;border:2px solid #FE980F;">
+                                <div class="full-name" style="padding-top: 15px;margin-top:10px;">
+                                    <span style="font-size: 15px;font-weight: bold;">نام و نام خانوادگی :</span><br>
+                                    <span>{{ user.first_name }} {{ user.last_name }}</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-9 clearfix">
+                            <div class="bill-to">
+                                <p>اطلاعات حمل</p>
+                                <div class="form-one" style="width:80%;">
+                                    <form method="post" action="/user/panel">
+                                        {% csrf_token %}
+                                        {{ profile_form.province.label }}
+                                        {{ profile_form.province }}
+                                        {{ profile_form.city.label }}
+                                        {{ profile_form.city }}
+                                        {{ profile_form.mobile.label }}
+                                        {{ profile_form.mobile }}
+                                        {{ profile_form.Emergency_call.label }}
+                                        {{ profile_form.Emergency_call }}
+                                        {{ profile_form.postal_code.label }}
+                                        {{ profile_form.postal_code }}
+                                        {{ profile_form.address.label }}
+                                        {{ profile_form.address }}
+                                        <div class="payment-options">
+                                                <span>
+                                                     <input type="submit" name="submit"
+                                                            class="btn btn-primary pull-left"
+                                                            style="border-radius:15px;margin-top:30px;" value="ثبت">
+                                                </span>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        {% if factor is False %}
+                            <div class="col-md-12">
+                                <div class="order-message">
+                                    <p>توضیحات</p>
+                                    <form method="post" action="/user/invoice">
+                                        <label>
+                                            <input type="radio" name="options" value="option1" checked
+                                                   onclick="toggleForm()"> همین آدرس رو تایید می‌کنید؟
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="options" value="option2" onclick="toggleForm()">
+                                            می‌خواهید سفارش خود را به آدرس دیگری ارسال نمایید؟
+                                        </label>
+                                        <div id="Same_ok" class="payment-options">
+                                      <span>
+                                          <input type="submit" name="submit1"
+                                                 class="btn btn-primary pull-left"
+                                                 style="border-radius: 15px;"
+                                                 value="تایید نهایی"
+                                                 onclick="submit()">
+
+                                      </span>
+                                        </div>
+                                        <div id="additionalForm" class="form-one"
+                                             style="display: none; width: 100%;margin-top: 30px">
+                                            {% csrf_token %}
+                                            <div style="display: flex;justify-content: space-between;margin-left:15px;padding-bottom: 10px">
+                                                {{ AddForm.full_name.label }}
+                                                {{ AddForm.full_name }}
+                                                {{ AddForm.mobile.label }}
+                                                {{ AddForm.mobile }}
+                                                {{ AddForm.postal_code.label }}
+                                                {{ AddForm.postal_code }}
+                                            </div>
+                                            {{ AddForm.address }}
+                                            <div class="payment-options">
+                                              <span>
+                                                            <input type="submit" name="submit2"
+                                                                   class="btn btn-primary pull-left"
+                                                                   style="border-radius:15px;" value="تایید نهایی">
+                                              </span>
+                                            </div>
+
+                                        </div>
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}

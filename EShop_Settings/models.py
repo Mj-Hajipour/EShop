@@ -27,3 +27,14 @@ class SiteSettings(models.Model):
         verbose_name_plural='مدیریت تنظیمات'
     def __str__(self):
         return self.Title
+    def save(self,*args, **kwargs):
+        if self.pk:
+            old_instance=SiteSettings.objects.get(pk=self.pk)
+            if old_instance.logo:
+                if os.path.isfile(old_instance.logo.path):
+                    os.remove(old_instance.logo.path)
+            elif old_instance.About_logo:
+                if os.path.isfile(old_instance.About_logo.path):
+                    os.remove(old_instance.About_logo.path)
+
+        super().save(*args, **kwargs)

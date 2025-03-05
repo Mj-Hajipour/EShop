@@ -8,6 +8,8 @@ from EShop_Order.form import UserNewOrderForm
 from EShop_Order.models import Order, OrderDetails
 from EShop_Product.models import Product
 from azbankgateways.models import banks
+
+from EShop_account.models import Invoice
 from common.utils import format_currency
 
 
@@ -32,7 +34,6 @@ from azbankgateways.exceptions import AZBankGatewaysException
 @login_required(login_url='/login')
 def add_user_order(request):
     new_order_form=UserNewOrderForm(request.POST or None)
-
     if new_order_form.is_valid():
         order=Order.objects.filter(owner_id=request.user.id,is_paid=False).first()
         if order is None:
@@ -55,10 +56,15 @@ def user_open_order(request):
     context={
         'order':None,
         'details':None,
-        'total':0,
+        'total':0
     }
-
     open_order = Order.objects.filter(owner_id=request.user.id, is_paid=False).first()
+    if open_order is not None:
+        factor = Invoice.objects.filter(order_id=open_order.id).first()
+        if factor is None:
+            context['factor'] = False
+        else:
+            context['factor'] = True
     if open_order is not None:
         context['order']= open_order
         order_details=open_order.orderdetails_set.all()
@@ -91,19 +97,17 @@ def remove_order_detail(request,*args,**kwargs):
     return redirect('/_404_view')
 
 
-
-
 ############################################Zarin Pal############################
 
 
-
+@login_required(login_url='/login')
 def go_to_gateway_view(request,*args,**kwargs):
     total_price=0
     open_order = Order.objects.filter(owner_id=request.user.id, is_paid=False).first()
     if open_order is not None:
             total_price=open_order.get_total_price()
             # خواندن مبلغ از هر جایی که مد نظر است
-            amount = total_price
+            amount = total_price*100
             # تنظیم شماره موبایل کاربر از هر جایی که مد نظر است
             user_mobile_number = "+989112221234"  # اختیاری
 

@@ -1,1 +1,1 @@
-default_app_config = 'EShop_account.apps.EShopConfig'
+default_app_config = 'store.apps.StoreConfig'

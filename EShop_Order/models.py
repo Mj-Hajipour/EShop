@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from EShop_Product.models import Product
-
+from common.utils import format_currency
 
 # Create your models here.
 class Order(models.Model):
@@ -24,19 +24,16 @@ class Order(models.Model):
         amount=0
         for detail in self.orderdetails_set.all():
             amount += detail.price*detail.count
-        return amount
-
+            Amount=format_currency(amount)
+        return Amount
 
 class OrderDetails(models.Model):
       order=models.ForeignKey(Order,on_delete=models.CASCADE,verbose_name='سبد خرید')
       product=models.ForeignKey(Product,on_delete=models.CASCADE,verbose_name='محصول')
       price=models.IntegerField(verbose_name='قیمت محصول')
       count=models.IntegerField(verbose_name='تعداد')
-
       def get_detail_sum(self):
           return self.count *self.price
-
-
 
       class Meta:
           verbose_name='جزییات محصول'

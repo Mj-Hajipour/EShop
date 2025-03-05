@@ -4,7 +4,7 @@ from django.db import models
 
 from EShop_products_category.models import ProductCategory
 
-from common.utils import get_file_ext
+from common.utils import get_file_ext,delete_old_image
 
 # Create your models here.
 class ProductsManager(models.Manager):
@@ -34,7 +34,7 @@ class ProductsManager(models.Manager):
 def upload_image_path(instance, filename):
     name, ext = get_file_ext(filename)
     final_name=f"{instance.id}_{instance.title}{ext}"
-    return f"products/{final_name}"
+    return f"products/{instance.id}/{final_name}"
 
 def upload_gallery_image_path(instance, filename):
     name, ext = get_file_ext(filename)
@@ -61,6 +61,14 @@ class Product(models.Model):
     def get_absolute_url(self):
         return  f"/products/{self.id}"
 
+    def save(self, *args, **kwargs):
+        if self.pk:  # بررسی می‌کند که آیا نمونه قبلاً وجود دارد
+            old_instance = self.__class__.objects.get(pk=self.pk)
+            if old_instance.image and old_instance.image != self.image:
+                delete_old_image(old_instance)
+        super().save(*args, **kwargs)
+
+
 class ProductGallery(models.Model):
      title=models.CharField(max_length=150,verbose_name='عنوان')
      image=models.ImageField(upload_to=upload_gallery_image_path,blank=True,verbose_name='تصویر')
@@ -71,3 +79,6 @@ class ProductGallery(models.Model):
          verbose_name_plural='تصاویر'
      def __str__(self):
          return self.title
+     def save(self, *args, **kwargs):
+        delete_old_image(self)
+        super().save(*args, **kwargs)
