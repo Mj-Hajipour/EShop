@@ -1,5 +1,3 @@
-from itertools import product
-from traceback import print_tb
 
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
@@ -77,6 +75,9 @@ def edit_user_profile(request):
         user.last_name = last_name
         user.email = email
         profile.image = profile_pic
+        user.is_active = True
+        user.Is_staff = False
+        user.Is_superuser = False
         user.save()
         profile.save()
     context = {
